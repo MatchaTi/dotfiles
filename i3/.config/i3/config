@@ -32,7 +32,7 @@ new_window pixel 0
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # wallpaper
-exec --no-startup-id feh --bg-fill /home/adi/Pictures/purple-wave.png
+exec --no-startup-id feh --bg-fill /home/adi/Pictures/asianVenice.png
 
 # picom
 exec --no-startup-id picom
@@ -60,6 +60,7 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec kitty
 bindsym $mod+b exec brave --password-store=basic
 bindsym $mod+p exec spectacle -p ~/Pictures
+bindsym $mod+e exec thunar
 
 # kill focused window
 bindsym $mod+q kill
@@ -110,7 +111,7 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+o layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
