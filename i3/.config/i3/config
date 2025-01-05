@@ -32,10 +32,13 @@ new_window pixel 0
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # wallpaper
-exec --no-startup-id feh --bg-fill /home/adi/Pictures/plants.jpg
+exec --no-startup-id feh --bg-fill /home/adi/Pictures/palebluenight.jpg
 
 # picom
 exec --no-startup-id picom
+
+# auto tiling windows
+exec_always autotiling
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -58,7 +61,7 @@ tiling_drag modifier titlebar
 # start a apps
 # bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec kitty
-bindsym $mod+b exec brave --password-store=basic
+bindsym $mod+b exec zen-browser --password-store=basic
 bindsym $mod+p exec spectacle -p ~/Pictures
 bindsym $mod+e exec thunar
 
