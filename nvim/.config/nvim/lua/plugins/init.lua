@@ -63,5 +63,17 @@ return {
     keys = {
       { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
     }
-  }
+  },
+
+
+  { "nvchad/volt",     lazy = true },
+  {
+    "nvchad/minty",
+    lazy = true,
+    config = function()
+      require "configs.minty"
+    end,
+  },
+
+  { "nvchad/showkeys", cmd = "ShowkeysToggle", opts = { position = "bottom-right" } },
 }
