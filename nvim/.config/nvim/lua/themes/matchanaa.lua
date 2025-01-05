@@ -1,6 +1,3 @@
--- Credits to original https://github.com/sainnhe/everforest
--- This is modified version of it
-
 local M = {}
 
 M.base_30 = {
@@ -15,20 +12,20 @@ M.base_30 = {
   grey_fg = "#383838",
   grey_fg2 = "#383838",
   light_grey = "#383838",
-  red = "#e67e80",
+  red = "#e67e80", -- statusline, tree fb
   baby_pink = "#ce8196",
   pink = "#ff75a0",
   line = "#383838", -- for lines like vertsplit
-  green = "#83c092",
+  green = "#83c092", -- lsp
   vibrant_green = "#a7c080",
   nord_blue = "#78b4ac",
-  blue = "#7393b3",
-  yellow = "#dbbc7f",
+  blue = "#7393b3", -- vim mode, tree icon fg
+  yellow = "#dbbc7f", -- statusliine height, tree git new file
   sun = "#d1b171",
   purple = "#ecafcc",
   dark_purple = "#d699b6",
   teal = "#69a59d",
-  orange = "#e69875",
+  orange = "#e69875", -- stausline folder
   cyan = "#95d1c9",
   statusline_bg = "#191919",
   lightbg = "#191919",

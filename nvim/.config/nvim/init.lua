@@ -37,3 +37,27 @@ vim.schedule(function()
 end)
 
 vim.opt.wrap = false
+vim.opt.relativenumber = true
+
+local nvimtree = require("nvim-tree")
+local autocmd = vim.api.nvim_create_autocmd
+
+-- Konfigurasi NvimTree
+nvimtree.setup({
+  actions = {
+    open_file = {
+      quit_on_open = true, -- Menutup NvimTree setelah membuka file
+    },
+  },
+})
+
+-- Autocmd untuk menutup NvimTree
+autocmd("BufEnter", {
+  nested = true,
+  callback = function()
+    if #vim.api.nvim_list_wins() == 1 and vim.bo.filetype == "NvimTree" then
+      vim.cmd "quit"
+    end
+  end,
+})
+
