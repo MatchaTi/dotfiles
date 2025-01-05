@@ -22,8 +22,8 @@
 
 Pastikan aplikasi berikut sudah terinstal di sistem Antum:
 
-- **GNU Stow** untuk manajemen dotfiles.
-- **i3wm**, **Polybar**, **Kitty**, **Picom**, **Neofetch**,**Neovim**,dan **Rofi** untuk konfigurasi utama.
+- `GNU Stow` untuk manajemen dotfiles.
+- `i3WM`, `Polybar`, `Kitty`, `Picom`, `Neofetch`, `Neovim`,dan `Rofi` untuk konfigurasi utama.
 
 #### Instalation
 
