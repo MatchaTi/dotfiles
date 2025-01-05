@@ -16,13 +16,14 @@
 - 🚀 Launcher: _Rofi_
 - 📁 File Manager: _Yazi Terminal File Manager_
 - 🖋️ Code Editor: _NvChad Distro_
+- 🗚  Font: JetBrainsMono Nerd Font
 
 #### Dependencies
 
 Pastikan aplikasi berikut sudah terinstal di sistem Antum:
 
 - **GNU Stow** untuk manajemen dotfiles.
-- **i3wm**, **Polybar**, **Kitty**, **Picom**, **\*Neofetch**,**Neovim**,dan **Rofi** untuk konfigurasi utama.
+- **i3wm**, **Polybar**, **Kitty**, **Picom**, **Neofetch**,**Neovim**,dan **Rofi** untuk konfigurasi utama.
 
 #### Instalation
 
