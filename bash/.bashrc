@@ -20,3 +20,5 @@ export NVM_DIR="$HOME/.nvm"
 alias ls="lsd"
 
 export EDITOR=nvim
+
+alias yz="yazi"

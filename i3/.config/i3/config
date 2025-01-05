@@ -32,7 +32,7 @@ new_window pixel 0
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # wallpaper
-exec --no-startup-id feh --bg-fill /home/adi/Pictures/asianVenice.png
+exec --no-startup-id feh --bg-fill /home/adi/Pictures/plants.jpg
 
 # picom
 exec --no-startup-id picom
