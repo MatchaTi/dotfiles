@@ -1,8 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
-    opts = require "configs.conform",
+    -- event = 'BufWritePre', -- uncomment for format on save opts = require "configs.conform",
   },
 
   -- These are some examples, uncomment them if you want to see them work!
@@ -17,8 +16,11 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-        "vim", "lua", "vimdoc",
-        "html", "css"
+        "vim",
+        "lua",
+        "vimdoc",
+        "html",
+        "css",
       },
     },
   },
@@ -36,12 +38,12 @@ return {
     },
     config = function()
       -- Mapping tab is already used by NvChad
-      vim.g.copilot_no_tab_map = true;
-      vim.g.copilot_assume_mapped = true;
-      vim.g.copilot_tab_fallback = "";
+      vim.g.copilot_no_tab_map = true
+      vim.g.copilot_assume_mapped = true
+      vim.g.copilot_tab_fallback = ""
       -- The mapping is set to other key, see custom/lua/mappings
       -- or run <leader>ch to see copilot mapping section
-    end
+    end,
   },
 
   {
@@ -61,18 +63,15 @@ return {
     -- setting the keybinding for LazyGit with 'keys' is recommended in
     -- order to load the plugin when the command is run for the first time
     keys = {
-      { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
-    }
+      { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
+    },
   },
 
-
-  { "nvchad/volt",     lazy = true },
+  { "nvzone/volt", lazy = true },
+  { "nvzone/menu", lazy = true },
   {
     "nvchad/minty",
     lazy = true,
-    config = function()
-      require "configs.minty"
-    end,
   },
 
   { "nvchad/showkeys", cmd = "ShowkeysToggle", opts = { position = "bottom-right" } },
