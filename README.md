@@ -4,7 +4,7 @@
 
 ![Preview](assets/paleblue.png)
 
-#### Repositori ini berisi konfigurasi pribadi saya untuk sistem Linux, dirancang untuk meningkatkan produktivitas dan estetika. Semua konfigurasi dikelola menggunakan GNU Stow agar mudah di-deploy ke sistem baru.
+Repositori ini berisi konfigurasi pribadi saya untuk sistem Linux, dirancang untuk meningkatkan produktivitas dan estetika. Semua konfigurasi dikelola menggunakan GNU Stow agar mudah di-deploy ke sistem baru.
 
 #### Specification
 
@@ -16,14 +16,15 @@
 - 🚀 Launcher: _Rofi_
 - 📁 File Manager: _Yazi Terminal File Manager_
 - 🖋️ Code Editor: _NvChad Distro_
-- 🗚  Font: JetBrainsMono Nerd Font
+- ✍️  Font: _JetBrainsMono Nerd Font_
+- 🔔 Notifications: _Dunst_
 
 #### Dependencies
 
 Pastikan aplikasi berikut sudah terinstal di sistem Antum:
 
 - `GNU Stow` untuk manajemen dotfiles.
-- `i3WM`, `Polybar`, `Kitty`, `Picom`, `Neofetch`, `Neovim`,dan `Rofi` untuk konfigurasi utama.
+- `i3WM`, `Polybar`, `Kitty`, `Picom`, `Neofetch`, `Neovim`, `Dunst`,dan `Rofi` untuk konfigurasi utama.
 
 #### Instalation
 
@@ -41,7 +42,7 @@ Pastikan aplikasi berikut sudah terinstal di sistem Antum:
 
 3. Deploy dotfiles menggunakan GNU Stow:
    ```bash
-   stow i3 polybar kitty picom nvim rofi neofetch
+   stow i3 polybar kitty picom nvim rofi neofetch dunst
    ```
 
 Selamat menggunakan dan bereksperimen dengan konfigurasi ini! 😊
