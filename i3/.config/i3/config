@@ -78,6 +78,8 @@ bindsym $mod+q kill
 # bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-1/launcher.sh
 bindsym $mod+x exec --no-startup-id ~/.config/rofi/powermenu/type-1/powermenu.sh
+bindsym $mod+y exec --no-startup-id ~/.config/rofi/emoji/emoji.sh
+
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
