@@ -40,17 +40,17 @@ end)
 vim.opt.wrap = false
 vim.opt.relativenumber = true
 
-local nvimtree = require("nvim-tree")
+local nvimtree = require "nvim-tree"
 local autocmd = vim.api.nvim_create_autocmd
 
 -- Konfigurasi NvimTree
-nvimtree.setup({
+nvimtree.setup {
   actions = {
     open_file = {
       quit_on_open = true, -- Menutup NvimTree setelah membuka file
     },
   },
-})
+}
 
 -- Autocmd untuk menutup NvimTree
 autocmd("BufEnter", {
@@ -63,5 +63,4 @@ autocmd("BufEnter", {
 })
 
 -- Autocmd untuk menampilkan ShowkeysToggle
-vim.cmd("ShowkeysToggle")
-
+vim.cmd "ShowkeysToggle"
