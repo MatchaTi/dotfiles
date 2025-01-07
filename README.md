@@ -2,7 +2,7 @@
 
 #### Preview
 
-![Preview](assets/paleblue.png)
+![Preview](assets/paleblue2.png)
 
 Repositori ini berisi konfigurasi pribadi saya untuk sistem Linux, dirancang untuk meningkatkan produktivitas dan estetika. Semua konfigurasi dikelola menggunakan GNU Stow agar mudah di-deploy ke sistem baru.
 
@@ -18,6 +18,7 @@ Repositori ini berisi konfigurasi pribadi saya untuk sistem Linux, dirancang unt
 - 🖋️ Code Editor: _NvChad Distro_
 - ✍️  Font: _JetBrainsMono Nerd Font_
 - 🔔 Notifications: _Dunst_
+- 🧭 Browser: _Zen Browser_
 
 #### Dependencies
 
@@ -42,7 +43,7 @@ Pastikan aplikasi berikut sudah terinstal di sistem Antum:
 
 3. Deploy dotfiles menggunakan GNU Stow:
    ```bash
-   stow i3 polybar kitty picom nvim rofi neofetch dunst
+   stow i3 polybar kitty picom nvim rofi neofetch dunst tmux
    ```
 
 4. Or
