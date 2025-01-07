@@ -5,6 +5,14 @@
 ---@type ChadrcConfig
 local M = {}
 
+-- disable default diagnostic
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+  virtual_text = false,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+})
+
 M.base46 = {
   theme = "paleblue",
 
@@ -20,15 +28,14 @@ M.base46 = {
 M.ui = {
   statusline = {
     theme = "minimal",
-    separator_style = "round"
+    separator_style = "round",
   },
   cmp = {
     format_colors = {
       tailwind = true,
     },
-    icons_left = true
+    icons_left = true,
   },
 }
-
 
 return M

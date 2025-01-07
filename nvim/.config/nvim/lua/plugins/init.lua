@@ -76,12 +76,22 @@ return {
 
   { "nvchad/showkeys", cmd = "ShowkeysToggle", opts = { position = "bottom-right" } },
 
-    {
+  {
     "shellRaining/hlchunk.nvim",
     event = { "BufReadPre", "BufNewFile" },
     config = function()
       -- require("hlchunk").setup {}
       require "configs.hlchunk"
+    end,
+  },
+
+  {
+    "rachartier/tiny-inline-diagnostic.nvim",
+    event = "VeryLazy", -- Or `LspAttach`
+    priority = 1000, -- needs to be loaded in first
+    config = function()
+      -- require('tiny-inline-diagnostic').setup()
+      require "configs.tiny-inline-diagnostic"
     end,
   },
 }

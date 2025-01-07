@@ -23,6 +23,7 @@ require("lazy").setup({
   },
 
   { import = "plugins" },
+  { "nvchad/showkeys", cmd = "ShowkeysToggle", opts = { position = "bottom-right" } },
 }, lazy_config)
 
 -- load theme
@@ -60,4 +61,7 @@ autocmd("BufEnter", {
     end
   end,
 })
+
+-- Autocmd untuk menampilkan ShowkeysToggle
+vim.cmd("ShowkeysToggle")
 
