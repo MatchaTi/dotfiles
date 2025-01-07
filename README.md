@@ -24,7 +24,7 @@ Repositori ini berisi konfigurasi pribadi saya untuk sistem Linux, dirancang unt
 Pastikan aplikasi berikut sudah terinstal di sistem Antum:
 
 - `GNU Stow` untuk manajemen dotfiles.
-- `i3WM`, `Polybar`, `Kitty`, `Picom`, `Neofetch`, `Neovim`, `Dunst`,dan `Rofi` untuk konfigurasi utama.
+- `i3WM`, `Polybar`, `Kitty`, `Picom`, `Neofetch`, `Neovim`, `Dunst`, `tmux`,dan `Rofi` untuk konfigurasi utama.
 
 #### Instalation
 
@@ -43,6 +43,11 @@ Pastikan aplikasi berikut sudah terinstal di sistem Antum:
 3. Deploy dotfiles menggunakan GNU Stow:
    ```bash
    stow i3 polybar kitty picom nvim rofi neofetch dunst
+   ```
+
+4. Or
+   ```bash
+   stow .
    ```
 
 Selamat menggunakan dan bereksperimen dengan konfigurasi ini! 😊
