@@ -11,9 +11,7 @@
 
 set $mod Mod1
 # Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
-font pango: JetBrainsMono Nerd Font 8
-
+# is used in the bar {} block below. font pango: JetBrainsMono Nerd Font 8
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -31,7 +29,7 @@ new_window pixel 0
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # wallpaper
-exec --no-startup-id feh --bg-fill /home/adi/Pictures/palebluenight.jpg
+exec --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/AnimeRailway.png
 
 # picom
 exec --no-startup-id picom
@@ -215,6 +213,6 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
 # Setup Gaps Inner/Outer
 gaps inner 12
-gaps outer 0
+gaps outer 32
 
 for_window [class="Polybar"] gaps inner 0
