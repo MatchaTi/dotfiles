@@ -25,7 +25,8 @@ M.ui = {
   cmp = {
     format_colors = {
       tailwind = true,
-    }
+    },
+    icons_left = true
   },
 }
 
