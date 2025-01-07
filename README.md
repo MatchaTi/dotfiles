@@ -2,7 +2,7 @@
 
 #### Preview
 
-![Preview](assets/paleblue2.png)
+![Preview](assets/paleblue-2.png)
 
 Repositori ini berisi konfigurasi pribadi saya untuk sistem Linux, dirancang untuk meningkatkan produktivitas dan estetika. Semua konfigurasi dikelola menggunakan GNU Stow agar mudah di-deploy ke sistem baru.
 
