@@ -7,14 +7,14 @@ require("tiny-inline-diagnostic").setup {
     hint = "DiagnosticHint",
     arrow = "NonText",
     background = "CursorLine", -- Can be a highlight or a hexadecimal color (#RRGGBB)
-    mixing_color = "None", -- Can be None or a hexadecimal color (#RRGGBB). Used to blend the background color with the diagnostic background color with another color.
+    mixing_color = "None",     -- Can be None or a hexadecimal color (#RRGGBB). Used to blend the background color with the diagnostic background color with another color.
   },
   options = {
     -- Show the source of the diagnostic.
     show_source = false,
 
     -- Use your defined signs in the diagnostic config table.
-    use_icons_from_diagnostic = false,
+    use_icons_from_diagnostic = true,
 
     -- Add messages to the diagnostic when multilines is enabled
     add_messages = true,
@@ -47,12 +47,12 @@ require("tiny-inline-diagnostic").setup {
     -- }
 
     multilines = {
-      enabled = false,
-      always_show = false,
+      enabled = true,
+      always_show = true,
     },
 
     -- Show all diagnostics on the cursor line.
-    show_all_diags_on_cursorline = false,
+    show_all_diags_on_cursorline = true,
 
     -- Enable diagnostics on Insert mode. You should also se the `throttle` option to 0, as some artefacts may appear.
     enable_on_insert = false,
@@ -107,5 +107,4 @@ require("tiny-inline-diagnostic").setup {
   blend = {
     factor = 0.22,
   },
-  -- ...
 }
