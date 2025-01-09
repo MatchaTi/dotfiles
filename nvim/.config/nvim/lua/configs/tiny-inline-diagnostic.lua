@@ -55,7 +55,7 @@ require("tiny-inline-diagnostic").setup {
     show_all_diags_on_cursorline = true,
 
     -- Enable diagnostics on Insert mode. You should also se the `throttle` option to 0, as some artefacts may appear.
-    enable_on_insert = false,
+    enable_on_insert = true,
 
     overflow = {
       -- Manage the overflow of the message.
