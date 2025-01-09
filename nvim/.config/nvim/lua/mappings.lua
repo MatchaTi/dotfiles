@@ -38,3 +38,7 @@ function CloseSidebarAndBuffer()
   end
   vim.cmd "bd"
 end
+
+map({ "n", "t" }, "<A-m>", function()
+  require("nvchad.term").toggle { pos = "sp", id = "htoggleTerm" }
+end, { desc = "terminal toggleable horizontal term" })
