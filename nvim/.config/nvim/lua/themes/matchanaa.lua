@@ -12,24 +12,25 @@ M.base_30 = {
   grey_fg = "#383838",
   grey_fg2 = "#383838",
   light_grey = "#383838",
-  red = "#e67e80", -- statusline, tree fb
-  baby_pink = "#ce8196",
-  pink = "#ff75a0",
-  line = "#383838", -- for lines like vertsplit
-  green = "#83c092", -- lsp
+  red = "#e67e80",
+  baby_pink = "#e67e80",
+  pink = "#d699b6",
+  line = "#22292b", -- for lines like vertsplit
+  green = "#a7c080",
   vibrant_green = "#a7c080",
-  nord_blue = "#78b4ac",
-  blue = "#7393b3", -- vim mode, tree icon fg
-  yellow = "#dbbc7f", -- statusliine height, tree git new file
-  sun = "#d1b171",
-  purple = "#ecafcc",
+  nord_blue = "#96cdfb",
+  blue = "#96cdfb",
+  yellow = "#dbb37f",
+  sun = "#dbb37f",
+  purple = "#d699b6",
   dark_purple = "#d699b6",
-  teal = "#69a59d",
-  orange = "#e69875", -- stausline folder
-  cyan = "#95d1c9",
-  statusline_bg = "#191919",
-  lightbg = "#191919",
-  pmenu_bg = "#83c092",
+  teal = "#7fbbb3",
+  orange = "#dbb37f",
+  cyan = "#7fbbb3",
+  statusline_bg = "#181f22",
+  lightbg = "#262d30",
+  lightbg2 = "#1f2629",
+  pmenu_bg = "#a7c080",
   folder_bg = "#96cdfb",
 }
 
@@ -43,23 +44,18 @@ M.base_16 = {
   base06 = "#ddd0b4",
   base07 = "#e7dabe",
   base08 = "#e67e80",
-  base09 = "#d699b6",
-  base0A = "#a7c080",
-  base0B = "#dbbc7f",
-  base0C = "#e69875",
-  base0D = "#a7c080",
-  base0E = "#7fbbb3",
-  base0F = "#d699b6",
+  base09 = "#dbb37f",
+  base0A = "#dbb37f",
+  base0B = "#a7c080",
+  base0C = "#7fbbb3",
+  base0D = "#96cdfb",
+  base0E = "#d699b6",
+  base0F = "#d3c6aa",
 }
 
 
 M.type = "dark"
 
-M.polish_hl = {
-  ["@tag"] = { fg = M.base_30.orange },
-  ["@tag.delimiter"] = { fg = M.base_30.green },
-}
-
-M = require("base46").override_theme(M, "everforest")
+M = require("base46").override_theme(M, "everblush")
 
 return M
