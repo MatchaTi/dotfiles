@@ -14,15 +14,16 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
 })
 
 M.base46 = {
-  theme = "paleblue",
+  theme = "matchanaa",
 
   -- hl_override = {
   -- 	Comment = { italic = true },
   -- 	["@comment"] = { italic = true },
   -- },
-  nvdash = {
-    load_on_startup = true,
-  },
+}
+
+M.nvdash = {
+  load_on_startup = true,
 }
 
 M.ui = {
