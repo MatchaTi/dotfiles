@@ -1,8 +1,8 @@
 [global]
     origin = top-right
     frame_width = 1
-    frame_color = "#050E14"
-    background = "#0A1A24"
+    frame_color = "#2c2c2c"
+    background = "#191919"
     stack_duplicates = true
     gap_size = 12
     font = JetBrainsMono Nerd Font 8
