@@ -29,7 +29,7 @@ new_window pixel 0
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # wallpaper
-exec --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/AnimeRailway.png
+exec --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/plants.jpg
 
 # picom
 exec --no-startup-id picom
@@ -64,7 +64,7 @@ tiling_drag modifier titlebar
 # start a apps
 # bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec kitty
-bindsym $mod+b exec zen-browser 
+bindsym $mod+b exec brave --password-store=basic
 bindsym $mod+p exec spectacle -p ~/Pictures
 bindsym $mod+e exec thunar
 

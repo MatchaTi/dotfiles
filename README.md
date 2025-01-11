@@ -18,7 +18,7 @@ Repositori ini berisi konfigurasi pribadi saya untuk sistem Linux, dirancang unt
 - 🖋️ Code Editor: _NvChad Distro_
 - ✍️  Font: _JetBrainsMono Nerd Font_
 - 🔔 Notifications: _Dunst_
-- 🧭 Browser: _Zen Browser_
+- 🧭 Browser: _Brave_
 
 #### Dependencies
 
