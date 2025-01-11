@@ -24,14 +24,14 @@ require("hlchunk").setup {
   chunk = {
     enable = true,
     support_filetypes = support_ft,
-    style = "#3388BB",
+    style = "#d3c6aa",
     -- ...
   },
   indent = {
     enable = true,
     support_filetypes = support_ft,
     style = {
-      { fg = "#15374C" },
+      { fg = "#2c2c2c" },
     },
     -- ...
   },
