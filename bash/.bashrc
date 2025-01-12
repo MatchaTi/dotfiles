@@ -7,6 +7,7 @@ alias ll='lsd -l'
 alias lla='lsd -a -l'
 alias py='python3'
 alias grep='grep --color=auto'
+alias nf='neofetch'
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
