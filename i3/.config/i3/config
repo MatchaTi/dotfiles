@@ -29,7 +29,7 @@ new_window pixel 0
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # wallpaper
-exec --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/plants.jpg
+exec --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/yagakimi-6.png
 
 # picom
 exec --no-startup-id picom
