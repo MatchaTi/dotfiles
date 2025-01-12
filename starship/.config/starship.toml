@@ -21,7 +21,7 @@ symbol = " "
 symbol = " "
 
 [character]
-format = "󰧣 "
+format = " "
 
 [username]
 style_user = 'blue bold'
@@ -30,3 +30,14 @@ format = '[$user]($style) '
 disabled = false
 show_always = true
 aliases = { "corpuser034g" = "matchati" }
+
+[git_status]
+format = "[[$conflicted](yellow)[$untracked](218)[$modified$renamed](255)[$staged](green)[$deleted](red)($ahead_behind$stashed)]($style)"
+conflicted = " $count "
+untracked = " $count "
+modified = " $count "
+deleted = " $count "
+staged = " $count "
+renamed = " $count "
+stashed = " $count "
+style = "cyan"
