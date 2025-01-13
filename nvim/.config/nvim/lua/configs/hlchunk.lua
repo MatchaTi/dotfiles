@@ -20,18 +20,30 @@ local support_ft = {
   "*.cpp",
 }
 
+-- matchanaa colors
+local matchanaaChunk = "#d3c6aa"
+local matchanaaIndent = "#2c2c2c"
+
+-- matchati colors
+local matchatiChunk = "#b3b9b8"
+local matchatiIndent = "#232a2d"
+
+-- paleblue colors
+local paleblueChunk = "#"
+local paleblueIndent = "#"
+
 require("hlchunk").setup {
   chunk = {
     enable = true,
     support_filetypes = support_ft,
-    style = "#d3c6aa",
+    style = matchatiChunk,
     -- ...
   },
   indent = {
     enable = true,
     support_filetypes = support_ft,
     style = {
-      { fg = "#2c2c2c" },
+      { fg = matchatiIndent },
     },
     -- ...
   },
