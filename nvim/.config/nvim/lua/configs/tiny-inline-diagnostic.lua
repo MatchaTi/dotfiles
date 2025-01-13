@@ -96,8 +96,10 @@ require("tiny-inline-diagnostic").setup {
   },
   -- ...
   signs = {
-    left = "",
-    right = "",
+    -- left = "",
+    -- right = "",
+    left = "",
+    right = "",
     diag = "●",
     arrow = "    ",
     up_arrow = "    ",
