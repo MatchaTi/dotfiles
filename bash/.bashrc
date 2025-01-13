@@ -14,7 +14,7 @@ alias nf='neofetch'
 
 PS1='[\u@\h \W]\$ '
 
-neofetch
+# neofetch
 
 eval "$(starship init bash)"
 
