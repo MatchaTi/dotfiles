@@ -36,7 +36,6 @@ M.ui = {
       tailwind = true,
     },
     icons_left = true,
-    style = "atom",
   },
 }
 
