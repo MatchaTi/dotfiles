@@ -132,3 +132,5 @@ export NVM_DIR="$HOME/.nvm"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#383838,bold"
 ZSH_HIGHLIGHT_STYLES[path]='fg=white'
+
+echo "\nSelalu Hello World Cuyy!"
