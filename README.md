@@ -2,7 +2,7 @@
 
 #### Preview
 
-![Preview](assets/desktop.png)
+![Preview](./assets/dekstop.png)
 
 Repositori ini berisi konfigurasi pribadi ana untuk sistem Linux, dirancang untuk meningkatkan produktivitas dan estetika. Semua konfigurasi dikelola menggunakan GNU Stow agar mudah di-deploy ke sistem baru.
 
