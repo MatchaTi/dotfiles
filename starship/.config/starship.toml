@@ -6,6 +6,7 @@ $git_status\
 $fill\
 $python\
 $nodejs\
+$php\
 $cmd_duration\
 $line_break\
 $character\
@@ -41,3 +42,7 @@ staged = " $count "
 renamed = " $count "
 stashed = " $count "
 style = "cyan"
+
+[php]
+symbol = " "
+format = 'via [$symbol $version](147 bold) '
