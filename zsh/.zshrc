@@ -111,7 +111,16 @@ alias ll='lsd -l'
 alias lla='lsd -a -l'
 alias py='python3'
 alias grep='grep --color=auto'
-alias nf='neofetch'
+
+# nvim fzf
+nf() {
+  local file=$(fzf -m --preview "bat --color=always {}")
+  if [[ -n "$file" ]]; then
+    # Cari root project berdasarkan keberadaan folder .git atau file proyek utama.
+    local project_root=$(git -C "$(dirname "$file")" rev-parse --show-toplevel 2>/dev/null || dirname "$file")
+    nvim "$file" -c "cd $project_root"
+  fi
+}
 
 # yazi
 function y() {
