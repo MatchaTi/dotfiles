@@ -50,7 +50,7 @@ M.base_16 = {
   base0C = "#6cbfbf",
   base0D = "#67b0e8",
   base0E = "#c47fd5",
-  base0F = "#dadada",
+  base0F = "#6cbfbf",
 }
 
 M.type = "dark"
