@@ -67,7 +67,31 @@ lspconfig.eslint.setup({
   end,
 })
 
+lspconfig.java_language_server.setup {
+  default_config = {
+    filetypes = { 'java' },
+    root_dir = lspconfig.util.root_pattern('build.gradle', 'build.gradle.kts', 'pom.xml', '.git'),
+    settings = {},
+  },
+  docs = {
+    description = [[
+https://github.com/georgewfraser/java-language-server
 
+Java language server
+
+Point `cmd` to `lang_server_linux.sh` or the equivalent script for macOS/Windows provided by java-language-server
+]],
+  },
+}
+
+lspconfig.jdtls.setup {
+  cmd = { "jdtls" },
+  on_attach = nvlsp.on_attach,
+  on_init = nvlsp.on_init,
+  capabilities = nvlsp.capabilities,
+  filetypes = { "java" },
+  root_dir = lspconfig.util.root_pattern("pom.xml", "gradle.build", ".git"),
+}
 -- You must make sure volar is setup
 -- e.g. require'lspconfig'.volar.setup{}
 -- See volar's section for more information
