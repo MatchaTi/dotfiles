@@ -4,9 +4,7 @@ $directory\
 $git_branch\
 $git_status\
 $fill\
-$python\
-$nodejs\
-$php\
+$all\
 $cmd_duration\
 $line_break\
 $character\
@@ -46,3 +44,7 @@ style = "cyan"
 [php]
 symbol = " "
 format = 'via [$symbol $version](147 bold) '
+
+[bun]
+symbol = " "
+style = "yellow"
