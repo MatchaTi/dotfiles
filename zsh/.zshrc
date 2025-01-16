@@ -143,3 +143,10 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#50575a,bold"
 ZSH_HIGHLIGHT_STYLES[path]='fg=white'
 
 echo "\nSelalu Hello World Cuyy😀😀😀!"
+
+# bun completions
+[ -s "/home/adi/.bun/_bun" ] && source "/home/adi/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
