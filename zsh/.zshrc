@@ -151,5 +151,5 @@ echo "\nSelalu Hello World Cuyy😀😀😀!"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-export JAVA_HOME="$HOME/jdk-23.0.1/"
-export PATH="$JAVA_HOME/bin:$PATH"
+# Java
+export PATH="/usr/lib/jvm/java-<version>-openjdk/bin/:$PATH"
