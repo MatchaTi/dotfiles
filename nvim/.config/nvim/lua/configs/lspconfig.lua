@@ -92,12 +92,3 @@ lspconfig.jdtls.setup {
   filetypes = { "java" },
   root_dir = lspconfig.util.root_pattern("pom.xml", "gradle.build", ".git"),
 }
--- You must make sure volar is setup
--- e.g. require'lspconfig'.volar.setup{}
--- See volar's section for more information
--- configuring single server, example: typescript
--- lspconfig.ts_ls.setup {
---   on_attach = nvlsp.on_attach,
---   on_init = nvlsp.on_init,
---   capabilities = nvlsp.capabilities,
--- }
