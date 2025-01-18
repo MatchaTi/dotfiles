@@ -29,7 +29,7 @@ M.nvdash = {
 M.ui = {
   statusline = {
     theme = "minimal",
-    separator_style = "",
+    separator_style = "round",
   },
   cmp = {
     format_colors = {
