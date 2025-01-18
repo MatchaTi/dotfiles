@@ -42,8 +42,7 @@ stashed = " $count "
 style = "cyan"
 
 [php]
-symbol = " "
-format = 'via [$symbol $version](147 bold) '
+symbol = " "
 
 [bun]
 symbol = " "
