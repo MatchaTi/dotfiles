@@ -162,3 +162,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Java
 export PATH="/usr/lib/jvm/java-<version>-openjdk/bin/:$PATH"
+
+# Composer
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
