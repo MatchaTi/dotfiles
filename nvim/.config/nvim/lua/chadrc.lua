@@ -39,4 +39,17 @@ M.ui = {
   },
 }
 
+M.term = {
+  winopts = { number = false, relativenumber = false },
+  sizes = { sp = 0.3, vsp = 0.2, ["bo sp"] = 0.3, ["bo vsp"] = 0.2 },
+  float = {
+    relative = "editor",
+    row = 0,
+    col = 0,
+    width = 1,
+    height = 0.9,
+    border = "single",
+  },
+}
+
 return M
