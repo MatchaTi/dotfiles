@@ -23,7 +23,7 @@ require("lazy").setup({
   },
 
   { import = "plugins" },
-  { "nvchad/showkeys", cmd = "ShowkeysToggle", opts = { position = "bottom-right" } },
+  { "nvchad/showkeys", cmd = "ShowkeysToggle", opts = { position = "top-right" } },
 }, lazy_config)
 
 -- load theme
