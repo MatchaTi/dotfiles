@@ -106,9 +106,10 @@ source $ZSH/oh-my-zsh.sh
 eval "$(starship init zsh)"
 
 # alias
-alias ls='lsd'
-alias ll='lsd -l'
-alias lla='lsd -a -l'
+alias ls='exa --icons'
+alias ll='exa --icons -l'
+alias lla='exa --icons -a -l'
+alias llt='exa --icons -T -L 2'
 alias py='python3'
 alias grep='grep --color=auto'
 
