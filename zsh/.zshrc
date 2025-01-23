@@ -165,3 +165,6 @@ export PATH="/usr/lib/jvm/java-<version>-openjdk/bin/:$PATH"
 
 # Composer
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
+# Zoxide
+eval "$(zoxide init zsh)"
