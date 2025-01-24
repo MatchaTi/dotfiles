@@ -10,26 +10,25 @@ $line_break\
 $character\
 """
 
+# Fill
 [fill]
-symbol = " "
+# symbol = " "
+style = "#1e2528"
 
-[python]
-symbol = " "
-
-[git_branch]
-symbol = " "
-
+# Character
 [character]
 format = " "
 
+# Username
 [username]
-style_user = 'blue bold'
+style_user = 'green bold'
 style_root = 'black bold'
-format = '󰣇 [$user]($style) '
+format = '󰣇 [$user]($style) on [Sedang Ngodonf](yellow) '
 disabled = false
 show_always = true
 aliases = { "corpuser034g" = "matchati" }
 
+# Git
 [git_status]
 format = "[[$conflicted](yellow)[$untracked](218)[$modified$renamed](255)[$staged](green)[$deleted](red)($ahead_behind$stashed)]($style)"
 conflicted = " $count "
@@ -41,9 +40,27 @@ renamed = " $count "
 stashed = " $count "
 style = "cyan"
 
-[php]
-symbol = " "
+[git_branch]
+symbol = " "
 
+# Directory
+[directory]
+style = "blue italic"
+format = "[$path]($style) "
+
+# Languages
 [bun]
 symbol = " "
-style = "yellow"
+style = "white"
+
+[python]
+symbol = " "
+
+[nodejs]
+symbol = " " 
+
+[java]
+symbol = "󰬷 "
+
+[php]
+symbol = " "
