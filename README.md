@@ -2,7 +2,7 @@
 
 #### Preview
 
-![Preview](./assets/dekstop.png)
+![Preview](./assets/desktop.png)
 
 Repositori ini berisi konfigurasi pribadi ana untuk sistem Linux, dirancang untuk meningkatkan produktivitas dan estetika. Semua konfigurasi dikelola menggunakan GNU Stow agar mudah di-deploy ke sistem baru.
 
@@ -16,7 +16,7 @@ Repositori ini berisi konfigurasi pribadi ana untuk sistem Linux, dirancang untu
 - 🚀 Launcher: _Rofi_
 - 📁 File Manager: _Yazi Terminal File Manager_
 - 🖋️ Code Editor: _NvChad Distro_
-- ✍️  Font: _JetBrainsMono Nerd Font_
+- ✍️  Font: _JetBrainsMono Nerd Font, BlexMono Nerd Font_
 - 🔔 Notifications: _Dunst_
 - 🧭 Browser: _Brave_
 - 🐚 Shell: _Zsh_
