@@ -7,6 +7,7 @@ local options = {
     js = { "prettier" },
     jsx = { "prettier" },
     tsx = { "prettier" },
+    php = { "php-cs-fixer" }
   },
 
   format_on_save = {
