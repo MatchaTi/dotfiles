@@ -92,3 +92,17 @@ lspconfig.jdtls.setup {
   filetypes = { "java" },
   root_dir = lspconfig.util.root_pattern("pom.xml", "gradle.build", ".git"),
 }
+
+lspconfig.intelephense.setup {
+  intelephense = {
+    filetypes = { "php", "blade", "php_only" },
+    settings = {
+      intelephense = {
+        filetypes = { "php", "blade", "php_only" },
+        files = {
+          associations = { "*.php", "*.blade.php" }, -- Associating .blade.php files as well
+          maxSize = 5000000,
+        },
+      },
+    }, }
+}
