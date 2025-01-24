@@ -1,13 +1,14 @@
 local options = {
   formatters_by_ft = {
-    lua = { "stylua" },
-    py = { "black" },
-    css = { "prettier" },
-    html = { "prettier" },
-    js = { "prettier" },
-    jsx = { "prettier" },
-    tsx = { "prettier" },
-    php = { "php-cs-fixer" }
+    lua   = { "stylua" },
+    py    = { "black" },
+    css   = { "prettier" },
+    html  = { "prettier" },
+    js    = { "prettier" },
+    jsx   = { "prettier" },
+    tsx   = { "prettier" },
+    php   = { "php-cs-fixer" },
+    blade = { "blade-formatter", "php-cs-fixer", "prettier" },
   },
 
   format_on_save = {
