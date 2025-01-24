@@ -152,7 +152,7 @@ export NVM_DIR="$HOME/.nvm"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#50575a,bold"
 ZSH_HIGHLIGHT_STYLES[path]='fg=white'
 
-echo "\nSelalu Hello World Cuyy😀😀😀!"
+# echo "\nSelalu Hello World Cuyy😀😀😀!"
 
 # bun completions
 [ -s "/home/adi/.bun/_bun" ] && source "/home/adi/.bun/_bun"
@@ -169,3 +169,13 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 # Zoxide
 eval "$(zoxide init zsh)"
+
+# Function to keep the prompt at the bottom
+function keep_prompt_at_bottom() {
+  echo -ne "\033[999;1H"
+}
+
+# Precmd function to move the prompt to the bottom
+function precmd() {
+  keep_prompt_at_bottom
+}
