@@ -42,3 +42,8 @@ end
 map({ "n", "t" }, "<A-m>", function()
   require("nvchad.term").toggle { pos = "sp", id = "htoggleTerm" }
 end, { desc = "terminal toggleable horizontal term" })
+
+-- Format laravel blade files
+map("n", "<leader>lf", function()
+  vim.cmd ":!blade-formatter resources/views/**/*.blade.php --write"
+end, { desc = "Format Laravel files" })
