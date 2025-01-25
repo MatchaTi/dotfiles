@@ -18,6 +18,8 @@ local support_ft = {
   "*.rs",
   "*.c",
   "*.cpp",
+  "*.php",
+  "*.blade.php"
 }
 
 -- matchanaa colors
