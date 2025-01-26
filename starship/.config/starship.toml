@@ -17,20 +17,21 @@ style = "#1e2528"
 
 # Character
 [character]
-format = " "
+success_symbol = '[](cyan)'
+error_symbol = '[](red)'
 
 # Username
 [username]
 style_user = 'green bold'
 style_root = 'black bold'
-format = ' [$user]($style) on [Sedang Ngodonf](yellow) '
+format = '  [$user]($style) [Sedang Ngodonf](yellow) [on](purple) '
 disabled = false
 show_always = true
 aliases = { "corpuser034g" = "matchati" }
 
 # Git
 [git_status]
-format = "[[$conflicted](yellow)[$untracked](218)[$modified$renamed](255)[$staged](green)[$deleted](red)($ahead_behind$stashed)]($style)"
+format = "[[$conflicted](yellow)[$untracked](blue)[$modified$renamed](yellow)[$staged](green)[$deleted](red)($ahead_behind$stashed)]($style)"
 conflicted = " $count "
 untracked = " $count "
 modified = " $count "
