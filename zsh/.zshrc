@@ -179,3 +179,10 @@ function keep_prompt_at_bottom() {
 function precmd() {
   keep_prompt_at_bottom
 }
+
+# Interactive Zoxide FZF
+zi() {
+    local dir
+    dir=$(zoxide query -l | fzf --preview 'ls -al {}' --preview-window=up:10) || return
+    cd "$dir" || return
+}
