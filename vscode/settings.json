@@ -1,0 +1,105 @@
+{
+  // Editor Settings
+  "editor.lineNumbers": "relative",
+  "editor.renderLineHighlight": "none",
+  "editor.matchBrackets": "never",
+  "editor.language.colorizedBracketPairs": [[]],
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.stickyScroll.scrollWithEditor": false,
+  "editor.stickyScroll.maxLineCount": 1,
+  "editor.lineHeight": 2.2,
+
+  // Font Settings
+  "editor.fontFamily": "JetBrainsMono Nerd Font, Source Code Pro, DankMono Nerd Font, BlexMono Nerd Font",
+  "editor.fontLigatures": "'ss02', 'cv02', 'cv05'",
+  "editor.fontWeight": "400",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Terminal Settings
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.smoothScrolling": true,
+
+  // Workbench Settings
+  "workbench.colorCustomizations": {},
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Bandori Matchati",
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.editor.showTabs": "single",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.layoutControl.enabled": false,
+
+  // Window Settings
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 1,
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": false,
+
+  // Git & GitHub
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": true
+  },
+
+  // JavaScript & TypeScript
+  "javascript.preferences.renameMatchingJsxTags": true,
+  "typescript.preferences.renameMatchingJsxTags": true,
+
+  // Prettier & Formatting
+  "prettier.jsxSingleQuote": true,
+  "html.format.wrapLineLength": 0,
+
+  // Language-Specific Settings
+  "files.associations": {
+    "*.mdx": "markdown"
+  },
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[php]": {
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+  },
+  "[postcss]": {
+    "gitlens.codeLens.scopes": ["document"]
+  },
+
+  // Explorer & UI Customization
+  "explorer.compactFolders": false,
+  "material-icon-theme.hidesExplorerArrows": true,
+  "extensions.ignoreRecommendations": true,
+
+  // Miscellaneous
+  "code-runner.runInTerminal": true,
+  "eslint.lintTask.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "vim.commandLineModeKeyBindings": []
+}
