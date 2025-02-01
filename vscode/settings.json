@@ -17,8 +17,6 @@
   "editor.fontFamily": "JetBrainsMono Nerd Font, Source Code Pro, DankMono Nerd Font, BlexMono Nerd Font",
   "editor.fontLigatures": "'ss02', 'cv02', 'cv05'",
   "editor.fontWeight": "400",
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // Terminal Settings
   "terminal.integrated.persistentSessionReviveProcess": "never",
@@ -63,6 +61,8 @@
   // Prettier & Formatting
   "prettier.jsxSingleQuote": true,
   "html.format.wrapLineLength": 0,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // Language-Specific Settings
   "files.associations": {
