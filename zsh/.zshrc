@@ -186,3 +186,5 @@ zi() {
     dir=$(zoxide query -l | fzf --preview 'ls -al {}' --preview-window=up:10) || return
     cd "$dir" || return
 }
+
+. "$HOME/.local/bin/env"
