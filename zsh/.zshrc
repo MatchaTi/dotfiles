@@ -112,6 +112,8 @@ alias lla='exa --icons -a -l'
 alias llt='exa --icons -T -L 2'
 alias py='python3'
 alias grep='grep --color=auto'
+alias runjava='javac -d bin src/com/example/main/*.java && java -cp bin Main'
+alias rifki=shutdown
 
 # nvim fzf
 nf() {
@@ -177,7 +179,7 @@ function keep_prompt_at_bottom() {
 
 # Precmd function to move the prompt to the bottom
 function precmd() {
-  keep_prompt_at_bottom
+  # keep_prompt_at_bottom
 }
 
 # Interactive Zoxide FZF
@@ -188,3 +190,6 @@ zi() {
 }
 
 . "$HOME/.local/bin/env"
+
+export MESA_LOADER_DRIVER_OVERRIDE=i965
+export INTEL_DEBUG=perf
