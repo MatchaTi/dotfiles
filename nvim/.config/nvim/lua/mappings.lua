@@ -47,3 +47,8 @@ end, { desc = "terminal toggleable horizontal term" })
 map("n", "<leader>lf", function()
   vim.cmd ":!blade-formatter resources/views/**/*.blade.php --write"
 end, { desc = "Format Laravel files" })
+
+-- Format TailwindCSS using Rustywind
+map("n", "<leader>lt", function()
+  vim.cmd "!rustywind --write ."
+end, { desc = "Format Tailwind" })
