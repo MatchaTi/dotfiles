@@ -1,35 +1,25 @@
-format = """
-$username\
-$directory\
-$git_branch\
-$git_status\
-$fill\
-$all\
-$cmd_duration\
-$line_break\
-$character\
-"""
+"$schema" = 'https://starship.rs/config-schema.json'
 
-# Fill
-[fill]
-# symbol = " "
-style = "#1e2528"
+add_newline = true
+# A minimal left prompt
+format = """$directory$character"""
+# move the rest of the prompt to the right
+right_format = """$all $cmd_duration"""
 
-# Character
 [character]
-success_symbol = '[](cyan)'
-error_symbol = '[](red)'
+success_symbol = '[➜](bold fg:green bg:base)[](bold base)'
+error_symbol = '[✖](bold fg:red bg:base)[](bold base)'
 
-# Username
-[username]
-style_user = 'green bold'
-style_root = 'black bold'
-format = '  [$user]($style) [Sedang Ngodonf](yellow) [on](purple) '
-disabled = false
-show_always = true
-aliases = { "corpuser034g" = "matchati" }
+[directory]
+style = 'bold fg:text bg:base'
+format = '[](bold base)[$path ]($style)[$read_only]($read_only_style)'
+read_only_style = 'bold fg:red bg:mantle'
 
-# Git
+[git_branch]
+format='[](bold base)[$symbol$branch(:$remote_branch) ](bold bg:base fg:text)[](bold base)'
+style='bold bright fg:white bg:base'
+symbol=" "
+
 [git_status]
 format = "[[$conflicted](yellow)[$untracked](blue)[$modified$renamed](yellow)[$staged](green)[$deleted](red)($ahead_behind$stashed)]($style)"
 conflicted = " $count "
@@ -41,27 +31,3 @@ renamed = " $count "
 stashed = " $count "
 style = "cyan"
 
-[git_branch]
-symbol = " "
-
-# Directory
-[directory]
-style = "blue italic"
-format = "[$path]($style) "
-
-# Languages
-[bun]
-symbol = " "
-style = "white"
-
-[python]
-symbol = " "
-
-[nodejs]
-symbol = " " 
-
-[java]
-symbol = "󰬷 "
-
-[php]
-symbol = " "
