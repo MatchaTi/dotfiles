@@ -29,10 +29,10 @@ new_window pixel 4
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # wallpaper
-exec --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/blue-eyes.png
+exec --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/purple-wave.png
 
 # picom
-exec --no-startup-id picom
+# exec --no-startup-id picom
 
 # auto tiling windows
 exec_always autotiling
@@ -212,7 +212,15 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
 # Setup Gaps Inner/Outer
-gaps inner 12
-gaps outer 32
+# gaps inner 12
+# gaps outer 32
 
 for_window [class="Polybar"] gaps inner 0
+
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #777c7a #777c7a #777c7a #777c7a   #777c7a
+client.unfocused        #0b0b0b0 #0b0b0b #0b0b0b #0b0b0b0   #0b0b0b
+client.focused_inactive #0b0b0b0 #0b0b0b0 #0b0b0b0 #0b0b0b0   #0b0b0b
+client.urgent           #e05c78 #e05c78 #ffffff #e05c78   #e05c78
+client.placeholder      #0b0b0b #0b0b0b #ffffff #0b0b0b   #0b0b0b

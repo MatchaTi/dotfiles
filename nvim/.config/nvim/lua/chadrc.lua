@@ -14,7 +14,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
 })
 
 M.base46 = {
-  theme = "blue-eyes",
+  theme = "kuro",
 
   -- hl_override = {
   -- 	Comment = { italic = true },
@@ -28,8 +28,8 @@ M.nvdash = {
 
 M.ui = {
   statusline = {
-    theme = "vscode_colored",
-    -- separator_style = "round",
+    theme = "minimal",
+    separator_style = "block",
   },
   cmp = {
     format_colors = {
