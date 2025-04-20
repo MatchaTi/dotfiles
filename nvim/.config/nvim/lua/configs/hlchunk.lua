@@ -34,18 +34,21 @@ local matchatiIndent = "#232a2d"
 local paleblueChunk = "#"
 local paleblueIndent = "#"
 
+local kuroChunk = "#222222"
+local kuroIndent = "#151515"
+
 require("hlchunk").setup {
   chunk = {
     enable = true,
     support_filetypes = support_ft,
-    style = matchatiChunk,
+    style = kuroChunk,
     -- ...
   },
   indent = {
     enable = true,
     support_filetypes = support_ft,
     style = {
-      { fg = matchatiIndent },
+      { fg = kuroIndent },
     },
     -- ...
   },

@@ -77,7 +77,7 @@ require 'lspconfig'.tailwindcss.setup {
     recommendedVariantOrder = "warning"
   },
   validate = true,
-  root_dir = require('lspconfig/util').root_pattern("tailwind.config.js", "tailwind.config.cjs", "tailwind.config.ts", "tailwind.config.tsx"),
+  root_dir = require('lspconfig/util').root_pattern("tailwind.config.js", "tailwind.config.cjs", "tailwind.config.ts", "tailwind.config.tsx", "globals.css"),
 }
 
 lspconfig.eslint.setup({
