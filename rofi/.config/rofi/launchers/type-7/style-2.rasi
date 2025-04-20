@@ -18,16 +18,33 @@ configuration {
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
 }
+@import                          "shared/colors.rasi"
+@import                          "shared/fonts.rasi"
 
-/*****----- Global Properties -----*****/
 * {
-    font:                        "JetBrains Mono Nerd Font 10";
-    background:     #0b0b0b;
-    background-alt: #151515;
-    foreground:     #e0e0e0;
-    selected:       #6f99e8;
-    active:         #7fc48f;
-    urgent:         #e05c78;
+    border-colour:               var(background-alt);
+    handle-colour:               var(selected);
+    background-colour:           var(background);
+    foreground-colour:           var(foreground);
+    alternate-background:        var(background-alt);
+    normal-background:           var(background);
+    normal-foreground:           var(foreground);
+    urgent-background:           var(urgent);
+    urgent-foreground:           var(background);
+    active-background:           var(active);
+    active-foreground:           var(background);
+    selected-normal-background:  var(selected);
+    selected-normal-foreground:  var(background);
+    selected-urgent-background:  var(active);
+    selected-urgent-foreground:  var(background);
+    selected-active-background:  var(urgent);
+    selected-active-foreground:  var(background);
+    alternate-normal-background: var(background);
+    alternate-normal-foreground: var(foreground);
+    alternate-urgent-background: var(urgent);
+    alternate-urgent-foreground: var(background);
+    alternate-active-background: var(active);
+    alternate-active-foreground: var(background);
 }
 
 /*****----- Main Window -----*****/
