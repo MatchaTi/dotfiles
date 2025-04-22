@@ -17,6 +17,7 @@ alias py='python3'
 alias grep='grep --color=auto'
 alias lg='lazygit'
 alias ldk='lazydocker'
+alias c='clear'
 
 # nvim fzf
 nf() {
