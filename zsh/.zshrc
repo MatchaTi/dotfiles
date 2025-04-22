@@ -15,8 +15,8 @@ alias lla='exa --icons -a -l'
 alias llt='exa --icons -T -L 2'
 alias py='python3'
 alias grep='grep --color=auto'
-alias runjava='javac -d bin src/com/example/main/*.java && java -cp bin Main'
-alias rifki=shutdown
+alias lg='lazygit'
+alias ldk='lazydocker'
 
 # nvim fzf
 nf() {
