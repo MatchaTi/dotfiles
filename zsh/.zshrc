@@ -16,7 +16,7 @@ alias llt='exa --icons -T -L 2'
 alias py='python3'
 alias grep='grep --color=auto'
 alias lg='lazygit'
-alias ldk='lazydocker'
+alias ldr='lazydocker'
 alias c='clear'
 
 # nvim fzf
