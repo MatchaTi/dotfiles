@@ -5,7 +5,10 @@ new_window pixel 0
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # wallpaper
-exec --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/purple-wave.png
+exec --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/asianVenice.png
+
+# fusuma
+exec --no-startup-id fusuma -c ~/.config/fusuma/config.yml
 
 # picom
 exec --no-startup-id picom
