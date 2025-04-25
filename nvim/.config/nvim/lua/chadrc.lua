@@ -38,10 +38,13 @@ M.ui = {
     icons_left = true,
     style = "atom"
   },
+  telescope= {
+    style = "bordered"
+  }
 }
 
 M.term = {
-  winopts = { number = false, relativenumber = false },
+  winopts = { number = false, relativenumber = true },
   sizes = { sp = 0.3, vsp = 0.2, ["bo sp"] = 0.3, ["bo vsp"] = 0.2 },
   float = {
     relative = "editor",
@@ -49,7 +52,7 @@ M.term = {
     col = 0,
     width = 1,
     height = 0.9,
-    border = "single",
+    border = "none",
   },
 }
 
