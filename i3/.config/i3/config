@@ -46,7 +46,7 @@ bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-7/launcher.sh
+bindsym $mod+space exec --no-startup-id ~/.config/rofi/launchers/type-7/launcher.sh
 bindsym $mod+x exec --no-startup-id ~/.config/rofi/powermenu/type-1/powermenu.sh
 bindsym $mod+y exec --no-startup-id ~/.config/rofi/emoji/emoji.sh
 
@@ -92,7 +92,7 @@ bindsym $mod+o layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+d focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
