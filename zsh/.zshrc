@@ -18,6 +18,7 @@ alias grep='grep --color=auto'
 alias lg='lazygit'
 alias ldr='lazydocker'
 alias c='clear'
+alias pw='poweroff'
 
 # nvim fzf
 nf() {
