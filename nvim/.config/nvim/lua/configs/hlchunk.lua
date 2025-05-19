@@ -42,6 +42,7 @@ require("hlchunk").setup {
     enable = true,
     support_filetypes = support_ft,
     style = kuroChunk,
+    use_treesitter = true,
     -- ...
   },
   indent = {
@@ -50,6 +51,7 @@ require("hlchunk").setup {
     style = {
       { fg = kuroIndent },
     },
+    use_treesitter = true,
     -- ...
   },
 }

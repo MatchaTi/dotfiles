@@ -18,6 +18,15 @@ vim.opt.expandtab = false
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 
+M.options = {
+	user_default_options = {
+		tabstop = 4, -- Lebar tab dalam spasi
+		softtabstop = 0, -- Gunakan tab asli, bukan spasi
+		shiftwidth = 4, -- Indentasi otomatis menggunakan tab
+		expandtab = false, -- Gunakan tab, bukan spasi
+	}
+}
+
 M.base46 = {
 	theme = "kuro",
 
