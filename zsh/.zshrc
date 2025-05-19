@@ -19,6 +19,9 @@ alias lg='lazygit'
 alias ldr='lazydocker'
 alias c='clear'
 alias pw='poweroff'
+alias ib='inxi -B'
+alias gcbu='git shortlog -sn --all'
+alias v='nvim'
 
 # nvim fzf
 nf() {
