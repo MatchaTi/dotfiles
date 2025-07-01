@@ -50,7 +50,7 @@ M.ui = {
 			tailwind = true,
 		},
 		icons_left = true,
-		style = "atom"
+		-- style = "atom"
 	},
 	telescope = {
 		style = "bordered"

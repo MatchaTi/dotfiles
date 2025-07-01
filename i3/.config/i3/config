@@ -1,4 +1,4 @@
-set $mod Mod1
+set $mod Mod4
 exec --no-startup-id dex --autostart --environment i3
 
 new_window pixel 0
