@@ -1,7 +1,10 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-completions)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+
+# Zoxide
+eval "$(zoxide init zsh)"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -61,10 +64,6 @@ function y() {
 # default editor
 export EDITOR=nvim
 
-# nodejs
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#50575a,bold"
 ZSH_HIGHLIGHT_STYLES[path]='fg=white'
@@ -84,8 +83,6 @@ export PATH="/usr/lib/jvm/java-<version>-openjdk/bin/:$PATH"
 # Composer
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
-# Zoxide
-eval "$(zoxide init zsh)"
 
 # Function to keep the prompt at the bottom
 function keep_prompt_at_bottom() {
@@ -104,7 +101,9 @@ zi() {
     cd "$dir" || return
 }
 
-. "$HOME/.local/bin/env"
-
 export MESA_LOADER_DRIVER_OVERRIDE=i965
 export INTEL_DEBUG=perf
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
