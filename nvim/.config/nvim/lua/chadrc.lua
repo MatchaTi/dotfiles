@@ -28,7 +28,8 @@ M.options = {
 }
 
 M.base46 = {
-	theme = "kuro",
+	theme = "chocolate",
+  transparency = true,
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },

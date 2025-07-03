@@ -52,3 +52,15 @@ end, { desc = "Format Laravel files" })
 map("n", "<leader>lt", function()
   vim.cmd "!rustywind --write ."
 end, { desc = "Format Tailwind" })
+
+-- Enable Copilot
+map("n", "<leader>ce", function()
+	vim.cmd "Copilot enable"
+	print("Copilot enabled")
+end, { desc = "Enable Copilot" })
+
+-- Disable Copilot
+map("n", "<leader>cd", function()
+	vim.cmd "Copilot disable"
+	print("Copilot disabled")
+end, { desc = "Disable Copilot" })
