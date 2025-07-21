@@ -18,7 +18,7 @@ require("bufferline").setup({
         show_close_icon = true,
         separator_style = "thin",
         indicator = {
-            style = 'underline'
+            style = 'none'
         },
     },
 })
