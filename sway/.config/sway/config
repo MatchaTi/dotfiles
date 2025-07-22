@@ -5,6 +5,7 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+default_border pixel 0
 ### Variables
 
 # font
@@ -33,7 +34,7 @@ output * bg /home/adi/dotfiles/wallpapers/yagakimi-flip.png fill
 #
 # Example configuration:
 #
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
+  # output eDP-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
@@ -159,8 +160,8 @@ exec setxkbmap -option caps:ctrl_modifier
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
     # bindsym $mod+b splith
-    bindsym $mod+v splitv
-    bindsym $mod+s splith
+    # bindsym $mod+v splitv
+    # bindsym $mod+s splith
 
     # Switch the current container between different layout styles
     # bindsym $mod+s layout stacking
@@ -248,3 +249,9 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
+# Screenshot: Simpan ke file dan clipboard
+bindsym Mod4+Shift+s exec ~/.config/sway/scripts/screenshot.sh
+
+# Screenshot: Hanya ke clipboard
+bindsym Mod4+s exec grim -g "$(slurp)" - | wl-copy
