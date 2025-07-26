@@ -85,7 +85,7 @@ function keep_prompt_at_bottom() {
 
 # Precmd function to move the prompt to the bottom
 function precmd() {
-  keep_prompt_at_bottom
+  # keep_prompt_at_bottom
 }
 
 # Interactive Zoxide FZF
