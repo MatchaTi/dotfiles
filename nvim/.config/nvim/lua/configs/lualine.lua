@@ -2,53 +2,39 @@ require('lualine').setup {
     options = {
         icons_enabled = true,
         theme = 'auto',
-        component_separators = { left = '', right = '' },
-        section_separators = { left = '', right = '' },
-        disabled_filetypes = {
-            statusline = {},
-            winbar = {},
-        },
-        ignore_focus = {},
-        always_divide_middle = true,
-        always_show_tabline = true,
-        globalstatus = false,
-        refresh = {
-            statusline = 1000,
-            tabline = 1000,
-            winbar = 1000,
-            refresh_time = 16, -- ~60fps
-            events = {
-                'WinEnter',
-                'BufEnter',
-                'BufWritePost',
-                'SessionLoadPost',
-                'FileChangedShellPost',
-                'VimResized',
-                'Filetype',
-                'CursorMoved',
-                'CursorMovedI',
-                'ModeChanged',
-            },
-        }
+        component_separators = { left = '|', right = '|' },
+        section_separators = { left = '', right = '' },
+        globalstatus = true,
     },
     sections = {
-        lualine_a = { 'mode' },
-        lualine_b = { 'branch', 'diff', 'diagnostics' },
-        lualine_c = { 'filename' },
-        lualine_x = { 'encoding', 'fileformat', 'filetype' },
-        lualine_y = { 'progress' },
-        lualine_z = { 'location' }
-    },
-    inactive_sections = {
-        lualine_a = {},
-        lualine_b = {},
-        lualine_c = { 'filename' },
-        lualine_x = { 'location' },
+        lualine_a = { { 'mode', fmt = function(str) return str:sub(1, 1) end } },
+        lualine_b = {
+        },
+        lualine_c = { { 'filetype', icon_only = true }, { 'filename', path = 1 },
+            {
+                'diagnostics',
+                symbols = {
+                    error = ' ',
+                    warn  = ' ',
+                    info  = ' ',
+                    hint  = ' ',
+                },
+                colored = true,
+            }
+        },
+        lualine_x = {
+            {
+                'diff',
+                symbols = { added = ' ', modified = ' ', removed = ' ',
+                    untracked = ' ', renamed = ' ', stashed = ' '
+                },
+                colored = true,
+            },
+        },
         lualine_y = {},
-        lualine_z = {}
+        lualine_z = {
+
+            { 'branch', icon = '' },
+        }
     },
-    tabline = {},
-    winbar = {},
-    inactive_winbar = {},
-    extensions = {}
 }

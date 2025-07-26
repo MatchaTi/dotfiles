@@ -35,3 +35,9 @@ vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>i", { noremap = true, silent = true })
 vim.keymap.set('n', '<Tab>', ':bnext<CR>', { silent = true, desc = 'Next Buffer' })
 vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>', { silent = true, desc = 'Previous Buffer' })
 vim.keymap.set("n", "<C-\\>", "<cmd>bdelete<CR>", { noremap = true, silent = true })
+
+-- LSPSaga
+vim.keymap.set('n', 'K', '<cmd>Lspsaga hover_doc<CR>', { silent = true, desc = 'Hover Docs' })
+vim.keymap.set('n', 'J', '<cmd>Lspsaga peek_definition<CR>', { silent = true, desc = 'Peek Definition' })
+vim.keymap.set('n', '<C-f>', '<cmd>Lspsaga finder<CR>', { silent = true, desc = 'LSP Finder' })
+vim.keymap.set('n', '<leader>rr', '<cmd>Lspsaga rename<CR>', { silent = true, desc = 'LSP Rename' })

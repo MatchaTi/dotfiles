@@ -6,7 +6,3 @@ vim.cmd("set shiftwidth=4")
 require "configs.lazy"
 require "configs.editor"
 require "mappings"
-
--- colorscheme
-vim.opt.termguicolors = true
-vim.cmd("colorscheme raana")
