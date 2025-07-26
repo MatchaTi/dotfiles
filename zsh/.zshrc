@@ -38,19 +38,12 @@ nf() {
 }
 
 export FZF_DEFAULT_OPTS='
-  --color fg:#d6d6d6,bg:#0b0b0b
-  --color fg+:#0b0b0b,bg+:#e05c78
-  --color hl:#e6d37a,hl+:#e6d37a
-  --color gutter:#0b0b0b
-  --color pointer:#e05c78
-  --color marker:#6f99e8
-  --color header:#79c2c0
-  --color info:#7fc48f
-  --color prompt:#6f99e8
-  --color spinner:#b27cd9
-  --color border:#151515
+  --color=fg:#8b949e,bg:#0d1117,hl:#ffffff
+  --color=fg+:#c9d1d9,bg+:#111d2e,hl+:#ffa198
+  --color=info:#d29922,prompt:#58a6ff,pointer:#a371f7
+  --color=marker:#ff7b72,spinner:#6e7681,header:#343941
   --border
-  --height 24'
+  --height=24'
 
 # yazi
 function y() {
@@ -66,8 +59,8 @@ function y() {
 export EDITOR=nvim
 
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#50575a,bold"
-ZSH_HIGHLIGHT_STYLES[path]='fg=white'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=color8,bold"
+ZSH_HIGHLIGHT_STYLES[path]='fg=color15'
 
 # echo "\nSelalu Hello World Cuyy😀😀😀!"
 
@@ -92,7 +85,7 @@ function keep_prompt_at_bottom() {
 
 # Precmd function to move the prompt to the bottom
 function precmd() {
-  # keep_prompt_at_bottom
+  keep_prompt_at_bottom
 }
 
 # Interactive Zoxide FZF
