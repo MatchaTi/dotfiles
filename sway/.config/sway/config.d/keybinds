@@ -1,0 +1,25 @@
+# Execute Program
+bindsym $mod+Return exec $term
+bindsym $mod+e exec $filemanager
+bindsym $mod+space exec $menu
+bindsym $mod+b exec $browser
+
+# Screenshoot
+bindsym Mod4+Shift+s exec ~/.config/sway/scripts/screenshoot.sh
+bindsym Mod4+s exec grim -g "$(slurp)" - | wl-copy
+bindsym $mod+p exec grim
+
+# Audio
+bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
+bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+
+# Brightness
+bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+
+# Reload Sway Config
+bindsym $mod+Shift+c reload
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+

@@ -1,0 +1,10 @@
+bar {
+    position top
+    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+  
+    colors {
+        statusline #ffffff
+        background #0d1117
+        inactive_workspace #32323200 #32323200 #5c5c5c
+    }
+}
