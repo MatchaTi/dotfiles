@@ -83,7 +83,7 @@ exec setxkbmap -option caps:ctrl_modifier
     # Kill focused window
     bindsym $mod+q kill
 
-    bindsym $mod+e exec thunar
+    bindsym $mod+e exec nautilus
 
     # Start your launcher
     bindsym $mod+space exec $menu
@@ -255,3 +255,5 @@ bindsym Mod4+Shift+s exec ~/.config/sway/scripts/screenshot.sh
 
 # Screenshot: Hanya ke clipboard
 bindsym Mod4+s exec grim -g "$(slurp)" - | wl-copy
+
+exec udiskie --no-automount --tray
