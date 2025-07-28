@@ -24,3 +24,12 @@ vim.keymap.set("n", "<leader>ai", function()
         },
     })
 end, { desc = "Add Missing Imports" })
+
+vim.keymap.set("n", "<leader>ru", function()
+    vim.lsp.buf.code_action({
+        apply = true,
+        context = {
+            only = { "source.removeUnused.ts" },
+        },
+    })
+end, { desc = "Remove Unused" })
