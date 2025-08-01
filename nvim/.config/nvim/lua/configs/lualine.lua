@@ -33,8 +33,19 @@ require('lualine').setup {
         },
         lualine_y = {},
         lualine_z = {
-
             { 'branch', icon = '' },
         }
     },
 }
+
+local modes = { 'normal', 'insert', 'visual', 'replace', 'command' }
+local sections = { 'a', 'b', 'c', 'x', 'y', 'z' }
+
+for _, mode in ipairs(modes) do
+    for _, section in ipairs(sections) do
+        vim.api.nvim_set_hl(0, 'lualine_' .. section .. '_' .. mode, { bg = 'NONE' })
+    end
+end
+
+vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE' })
+vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE' })
