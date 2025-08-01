@@ -21,7 +21,4 @@ require("bufferline").setup({
             style = 'none'
         },
     },
-    highlights = {
-        fill = { fg = '#ffffff', bg = '#0d1117' },
-    }
 })
