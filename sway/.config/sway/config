@@ -25,7 +25,11 @@ set $browser firefox
 set $filemanager nautilus
 
 # Wallpaper
-output * bg /home/adi/dotfiles/wallpapers/yagakimi-flip.png fill
+output * bg /home/adi/Pictures/yagakimi.png fill
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
+
+set $opacity 1
+for_window [class="kitty"] opacity $opacity
+for_window [app_id="kitty"] opacity $opacity
