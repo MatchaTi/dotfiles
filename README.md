@@ -8,17 +8,15 @@ Repositori ini berisi konfigurasi pribadi ana untuk sistem Linux, dirancang untu
 
 #### Specification
 
-- 🖥️ OS: _Endeavour OS_
-- 🪟 WM: _i3WM_
+- 🖥️ OS: _Arch Linux_
+- 🪟 WM: _Sway_
 - 📟 Terminal: _Kitty_
-- 📊 Status Bar: _Polybar_
-- 🌀 Compositor: _Picom_
-- 🚀 Launcher: _Rofi_
+- 📊 Status Bar: _Swaybar_
+- 🚀 Launcher: _wmenu-run_
 - 📁 File Manager: _Yazi Terminal File Manager_
-- 🖋️ Code Editor: _NvChad Distro_
-- ✍️  Font: _JetBrainsMono Nerd Font, BlexMono Nerd Font_
-- 🔔 Notifications: _Dunst_
-- 🧭 Browser: _Brave_
+- 🖋️ Code Editor: _NVim_
+- ✍️ Font: _JetBrainsMono Nerd Font_
+- 🧭 Browser: _Firefox_
 - 🐚 Shell: _Zsh_
 
 #### Dependencies
@@ -26,7 +24,7 @@ Repositori ini berisi konfigurasi pribadi ana untuk sistem Linux, dirancang untu
 Pastikan aplikasi berikut sudah terinstal di sistem Antum:
 
 - `GNU Stow` untuk manajemen dotfiles.
-- `i3WM`, `Polybar`, `Kitty`, `Picom`, `Neofetch`, `Neovim`, `Dunst`, `tmux`,dan `Rofi` untuk konfigurasi utama.
+- `Sway`, `Swaybar`, `wmenu-run`, `Yazi`, `NVim`, `Zsh`, dan `Firefox` untuk konfigurasi utama.
 
 #### Instalation
 
@@ -43,13 +41,9 @@ Pastikan aplikasi berikut sudah terinstal di sistem Antum:
    ```
 
 3. Deploy dotfiles menggunakan GNU Stow:
-   ```bash
-   stow i3 polybar kitty picom nvim rofi neofetch dunst tmux
-   ```
 
-4. Or
    ```bash
-   stow .
+   stow sway kitty nvim zsh
    ```
 
 Selamat menggunakan dan bereksperimen dengan konfigurasi ini! 😊
