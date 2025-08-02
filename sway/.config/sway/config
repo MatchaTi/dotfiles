@@ -3,7 +3,8 @@ exec udiskie --no-automount --tray
 # exec waybar
 
 # Border
-default_border pixel 0
+default_border pixel 4
+smart_borders on
 
 # Font
 font pango:JetBrainsMono Nerd Font 8
