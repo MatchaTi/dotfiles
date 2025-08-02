@@ -38,7 +38,7 @@ require('lualine').setup {
     },
 }
 
-local modes = { 'normal', 'insert', 'visual', 'replace', 'command' }
+local modes = { 'normal', 'insert', 'visual', 'replace', 'command', 'terminal' }
 local sections = { 'a', 'b', 'c', 'x', 'y', 'z' }
 
 for _, mode in ipairs(modes) do
@@ -47,5 +47,5 @@ for _, mode in ipairs(modes) do
     end
 end
 
-vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE' })
-vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE' })
+vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE', fg = "#ffffff" })
+vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE', fg = "#5c6370" })
