@@ -6,46 +6,34 @@ require('lualine').setup {
         section_separators = { left = '', right = '' },
         globalstatus = true,
     },
+
     sections = {
-        lualine_a = { { 'mode', fmt = function(str) return str:sub(1, 1) end } },
-        lualine_b = {
-        },
-        lualine_c = { { 'filetype', icon_only = true }, { 'filename', path = 1 },
-            {
-                'diagnostics',
-                symbols = {
-                    error = ' ',
-                    warn  = ' ',
-                    info  = ' ',
-                    hint  = ' ',
-                },
-                colored = true,
-            }
-        },
-        lualine_x = {
+        lualine_a = { 'mode' },
+        lualine_b = { 'branch' },
+        lualine_c = { { 'filename', path = 1 },
             {
                 'diff',
                 symbols = { added = ' ', modified = ' ', removed = ' ',
                     untracked = ' ', renamed = ' ', stashed = ' '
                 },
-                colored = true,
-            },
+                colored = true
+            }
+            , 'diagnostics'
         },
-        lualine_y = {},
-        lualine_z = {
-            { 'branch', icon = '' },
-        }
+        lualine_x = { 'encoding', 'fileformat', 'filetype' },
+        lualine_y = { 'progress' },
+        lualine_z = { 'location' }
     },
 }
 
-local modes = { 'normal', 'insert', 'visual', 'replace', 'command', 'terminal' }
-local sections = { 'a', 'b', 'c', 'x', 'y', 'z' }
+-- local modes = { 'normal', 'insert', 'visual', 'replace', 'command', 'terminal' }
+-- local sections = { 'a', 'b', 'c', 'x', 'y', 'z' }
 
-for _, mode in ipairs(modes) do
-    for _, section in ipairs(sections) do
-        vim.api.nvim_set_hl(0, 'lualine_' .. section .. '_' .. mode, { bg = 'NONE' })
-    end
-end
-
-vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE', fg = "#ffffff" })
-vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE', fg = "#5c6370" })
+-- for _, mode in ipairs(modes) do
+--     for _, section in ipairs(sections) do
+--         vim.api.nvim_set_hl(0, 'lualine_' .. section .. '_' .. mode, { bg = 'NONE' })
+--     end
+-- end
+--
+-- vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE', fg = "#ffffff" })
+-- vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE', fg = "#5c6370" })
