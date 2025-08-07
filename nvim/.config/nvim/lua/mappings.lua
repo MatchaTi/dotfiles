@@ -42,3 +42,6 @@ vim.keymap.set('n', 'J', '<cmd>Lspsaga peek_definition<CR>', { silent = true, de
 vim.keymap.set('n', '<C-f>', '<cmd>Lspsaga finder<CR>', { silent = true, desc = 'LSP Finder' })
 vim.keymap.set('n', '<leader>rr', '<cmd>Lspsaga rename<CR>', { silent = true, desc = 'LSP Rename' })
 vim.keymap.set({ 'n', 't' }, '<A-i>', '<cmd>Lspsaga term_toggle<CR>', { silent = true })
+
+-- noh
+vim.keymap.set('n', '<Esc>', ':noh<CR>', { silent = true, desc = 'Clear Search Highlight' })

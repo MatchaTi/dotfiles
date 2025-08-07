@@ -191,6 +191,10 @@ return {
         config = function()
             require('github-theme').setup({
                 -- ...
+                options = {
+                    transparent = true,
+                    terminal_colors = true,
+                }
             })
 
             vim.cmd('colorscheme github_dark_tritanopia')
