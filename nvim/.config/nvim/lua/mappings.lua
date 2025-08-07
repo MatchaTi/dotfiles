@@ -44,4 +44,7 @@ vim.keymap.set('n', '<leader>rr', '<cmd>Lspsaga rename<CR>', { silent = true, de
 vim.keymap.set({ 'n', 't' }, '<A-i>', '<cmd>Lspsaga term_toggle<CR>', { silent = true })
 
 -- noh
-vim.keymap.set('n', '<Esc>', ':noh<CR>', { silent = true, desc = 'Clear Search Highlight' })
+vim.keymap.set('n', ']', ':noh<CR>', { silent = true, desc = 'Clear Search Highlight' })
+
+-- change / to s for search
+vim.keymap.set('n', 's', '/', { silent = true, desc = 'Search' })
