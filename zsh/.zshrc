@@ -26,8 +26,8 @@ alias pw='poweroff'
 alias ib='inxi -B'
 alias gcbu='git shortlog -sn --all'
 alias v='nvim'
-alias serve='php artisan serve'
 alias a='y'
+alias f='rxfetch'
 
 # nvim fzf
 nf() {
