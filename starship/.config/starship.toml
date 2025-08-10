@@ -7,7 +7,7 @@ format = """$directory$character"""
 right_format = """$all $cmd_duration"""
 
 [character]
-success_symbol = '[➜](bold fg:green bg:base)[](bold base)'
+success_symbol = '[➜](bold fg:blue bg:base)[](bold base)'
 error_symbol = '[✖](bold fg:red bg:base)[](bold base)'
 
 [directory]
