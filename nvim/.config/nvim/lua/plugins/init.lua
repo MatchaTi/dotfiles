@@ -190,10 +190,10 @@ return {
         priority = 1000, -- make sure to load this before all the other start plugins
         config = function()
             require('github-theme').setup({
-                -- ...
                 options = {
                     transparent = true,
                     terminal_colors = true,
+                    hide_nc_statusline = true,
                 }
             })
 
@@ -209,5 +209,5 @@ return {
             'nvim-treesitter/nvim-treesitter',
             'nvim-tree/nvim-web-devicons',
         }
-    }
+    },
 }

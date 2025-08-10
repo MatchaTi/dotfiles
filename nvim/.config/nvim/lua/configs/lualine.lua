@@ -1,11 +1,65 @@
+local theme = {
+    normal = {
+        a = { bg = "None" },
+        b = { bg = "None" },
+        c = { bg = "None" },
+        x = { bg = "None" },
+        y = { bg = "None" },
+        z = { bg = "None" },
+    },
+    insert = {
+        a = { bg = "None" },
+        b = { bg = "None" },
+        c = { bg = "None" },
+        x = { bg = "None" },
+        y = { bg = "None" },
+        z = { bg = "None" },
+    },
+    visual = {
+        a = { bg = "None" },
+        b = { bg = "None" },
+        c = { bg = "None" },
+        x = { bg = "None" },
+        y = { bg = "None" },
+        z = { bg = "None" },
+    },
+    replace = {
+        a = { bg = "None" },
+        b = { bg = "None" },
+        c = { bg = "None" },
+        x = { bg = "None" },
+        y = { bg = "None" },
+        z = { bg = "None" },
+    },
+    command = {
+        a = { bg = "None" },
+        b = { bg = "None" },
+        c = { bg = "None" },
+        x = { bg = "None" },
+        y = { bg = "None" },
+        z = { bg = "None" },
+    },
+    inactive = {
+        a = { bg = "None" },
+        b = { bg = "None" },
+        c = { bg = "None" },
+        x = { bg = "None" },
+        y = { bg = "None" },
+        z = { bg = "None" },
+    },
+}
+
 require('lualine').setup {
+
     options = {
         icons_enabled = true,
-        theme = 'auto',
+        theme = theme,
         -- component_separators = { left = '|', right = '|' },
         -- section_separators = { left = '', right = '' },
-        component_separators = { left = '', right = '' },
-        section_separators = { left = '', right = '' },
+        -- component_separators = { left = '', right = '' },
+        -- section_separators = { left = '', right = '' },
+        component_separators = { left = '', right = '' },
+        section_separators = { left = '', right = '' },
         globalstatus = true,
     },
 
@@ -28,14 +82,14 @@ require('lualine').setup {
     },
 }
 
--- local modes = { 'normal', 'insert', 'visual', 'replace', 'command', 'terminal' }
--- local sections = { 'a', 'b', 'c', 'x', 'y', 'z' }
+local modes = { 'normal', 'insert', 'visual', 'replace', 'command', 'terminal' }
+local sections = { 'a', 'b', 'c', 'x', 'y', 'z' }
 
--- for _, mode in ipairs(modes) do
---     for _, section in ipairs(sections) do
---         vim.api.nvim_set_hl(0, 'lualine_' .. section .. '_' .. mode, { bg = 'NONE' })
---     end
--- end
---
--- vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE', fg = "#ffffff" })
--- vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE', fg = "#5c6370" })
+for _, mode in ipairs(modes) do
+    for _, section in ipairs(sections) do
+        vim.api.nvim_set_hl(0, 'lualine_' .. section .. '_' .. mode, { bg = 'NONE' })
+    end
+end
+
+vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE', fg = "#c9d1d9" })
+vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE', fg = "#c9d1d9" })
