@@ -23,7 +23,12 @@ return {
             require "configs.file-browser"
         end
     },
-    { "nvim-tree/nvim-web-devicons", opts = {} },
+    {
+        "nvim-tree/nvim-web-devicons",
+        config = function()
+            require "configs.devicons"
+        end
+    },
     {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' },
