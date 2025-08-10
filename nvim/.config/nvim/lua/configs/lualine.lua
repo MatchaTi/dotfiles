@@ -91,5 +91,5 @@ for _, mode in ipairs(modes) do
     end
 end
 
-vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE', fg = "#c9d1d9" })
-vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE', fg = "#c9d1d9" })
+vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE', fg = "#6e7681" })
+vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE', fg = "#6e7681" })
