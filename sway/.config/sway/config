@@ -20,7 +20,8 @@ set $up k
 set $right l
 
 # Apps
-set $term kitty
+# set $term kitty
+set $term foot
 set $menu wmenu-run
 set $browser firefox
 set $filemanager nautilus
