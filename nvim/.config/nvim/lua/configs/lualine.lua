@@ -48,6 +48,9 @@ local theme = {
         z = { bg = "None" },
     },
 }
+local function vimIcon()
+    return [[]]
+end
 
 require('lualine').setup {
 
@@ -64,7 +67,7 @@ require('lualine').setup {
     },
 
     sections = {
-        lualine_a = { 'mode' },
+        lualine_a = { { vimIcon }, 'mode' },
         lualine_b = { 'branch' },
         lualine_c = { { 'filename', path = 1 },
             {
