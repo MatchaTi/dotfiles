@@ -27,7 +27,7 @@ set $browser firefox
 set $filemanager nautilus
 
 # Wallpaper
-output * bg /home/adi/Pictures/mygo-2.png fill
+output * bg ~/dotfiles/wallpapers/mygo-2.png fill
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
