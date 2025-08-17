@@ -25,6 +25,7 @@ set $term foot
 set $menu wmenu-run
 set $browser firefox
 set $filemanager nautilus
+set $displayManager wdisplays
 
 # Wallpaper
 output * bg ~/dotfiles/wallpapers/mygo-2.png fill

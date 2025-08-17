@@ -3,6 +3,7 @@ bindsym $mod+Return exec $term
 bindsym $mod+e exec $filemanager
 bindsym $mod+space exec $menu
 bindsym $mod+b exec $browser
+bindsym $mod+w exec $displayManager
 
 # Screenshoot
 bindsym Mod4+Shift+s exec ~/.config/sway/scripts/screenshoot.sh
