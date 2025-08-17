@@ -48,3 +48,6 @@ vim.keymap.set('n', ']', ':noh<CR>', { silent = true, desc = 'Clear Search Highl
 
 -- change / to s for search
 vim.keymap.set('n', 's', '/', { silent = true, desc = 'Search' })
+
+-- nvim tree
+vim.keymap.set('n', '<leader>w', ':NvimTreeToggle<CR>', { silent = true, desc = 'Toggle Nvim Tree' })

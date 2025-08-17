@@ -208,14 +208,14 @@ return {
         }
     },
     {
-        "folke/noice.nvim",
-        event = "VeryLazy",
-        config = function()
-            require 'configs.noice'
-        end,
+        "nvim-tree/nvim-tree.lua",
+        version = "*",
+        lazy = false,
         dependencies = {
-            "MunifTanjim/nui.nvim",
-            "rcarriga/nvim-notify",
-        }
+            "nvim-tree/nvim-web-devicons",
+        },
+        config = function()
+            require "configs.nvim-tree"
+        end,
     }
 }
