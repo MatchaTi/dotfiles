@@ -1,53 +1,53 @@
-local theme = {
-    normal = {
-        a = { bg = "None" },
-        b = { bg = "None" },
-        c = { bg = "None" },
-        x = { bg = "None" },
-        y = { bg = "None" },
-        z = { bg = "None" },
-    },
-    insert = {
-        a = { bg = "None" },
-        b = { bg = "None" },
-        c = { bg = "None" },
-        x = { bg = "None" },
-        y = { bg = "None" },
-        z = { bg = "None" },
-    },
-    visual = {
-        a = { bg = "None" },
-        b = { bg = "None" },
-        c = { bg = "None" },
-        x = { bg = "None" },
-        y = { bg = "None" },
-        z = { bg = "None" },
-    },
-    replace = {
-        a = { bg = "None" },
-        b = { bg = "None" },
-        c = { bg = "None" },
-        x = { bg = "None" },
-        y = { bg = "None" },
-        z = { bg = "None" },
-    },
-    command = {
-        a = { bg = "None" },
-        b = { bg = "None" },
-        c = { bg = "None" },
-        x = { bg = "None" },
-        y = { bg = "None" },
-        z = { bg = "None" },
-    },
-    inactive = {
-        a = { bg = "None" },
-        b = { bg = "None" },
-        c = { bg = "None" },
-        x = { bg = "None" },
-        y = { bg = "None" },
-        z = { bg = "None" },
-    },
-}
+-- local theme = {
+--     normal = {
+--         a = { bg = "None" },
+--         b = { bg = "None" },
+--         c = { bg = "None" },
+--         x = { bg = "None" },
+--         y = { bg = "None" },
+--         z = { bg = "None" },
+--     },
+--     insert = {
+--         a = { bg = "None" },
+--         b = { bg = "None" },
+--         c = { bg = "None" },
+--         x = { bg = "None" },
+--         y = { bg = "None" },
+--         z = { bg = "None" },
+--     },
+--     visual = {
+--         a = { bg = "None" },
+--         b = { bg = "None" },
+--         c = { bg = "None" },
+--         x = { bg = "None" },
+--         y = { bg = "None" },
+--         z = { bg = "None" },
+--     },
+--     replace = {
+--         a = { bg = "None" },
+--         b = { bg = "None" },
+--         c = { bg = "None" },
+--         x = { bg = "None" },
+--         y = { bg = "None" },
+--         z = { bg = "None" },
+--     },
+--     command = {
+--         a = { bg = "None" },
+--         b = { bg = "None" },
+--         c = { bg = "None" },
+--         x = { bg = "None" },
+--         y = { bg = "None" },
+--         z = { bg = "None" },
+--     },
+--     inactive = {
+--         a = { bg = "None" },
+--         b = { bg = "None" },
+--         c = { bg = "None" },
+--         x = { bg = "None" },
+--         y = { bg = "None" },
+--         z = { bg = "None" },
+--     },
+-- }
 local function vimIcon()
     return [[]]
 end
@@ -59,10 +59,10 @@ require('lualine').setup {
         theme = theme,
         -- component_separators = { left = '|', right = '|' },
         -- section_separators = { left = '', right = '' },
-        -- component_separators = { left = '', right = '' },
-        -- section_separators = { left = '', right = '' },
-        component_separators = { left = '', right = '' },
-        section_separators = { left = '', right = '' },
+        component_separators = { left = '', right = '' },
+        section_separators = { left = '', right = '' },
+        -- component_separators = { left = '', right = '' },
+        -- section_separators = { left = '', right = '' },
         globalstatus = true,
     },
 
@@ -85,14 +85,14 @@ require('lualine').setup {
     },
 }
 
-local modes = { 'normal', 'insert', 'visual', 'replace', 'command', 'terminal' }
-local sections = { 'a', 'b', 'c', 'x', 'y', 'z' }
-
-for _, mode in ipairs(modes) do
-    for _, section in ipairs(sections) do
-        vim.api.nvim_set_hl(0, 'lualine_' .. section .. '_' .. mode, { bg = 'NONE' })
-    end
-end
-
-vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE' })
-vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE' })
+-- local modes = { 'normal', 'insert', 'visual', 'replace', 'command', 'terminal' }
+-- local sections = { 'a', 'b', 'c', 'x', 'y', 'z' }
+--
+-- for _, mode in ipairs(modes) do
+--     for _, section in ipairs(sections) do
+--         vim.api.nvim_set_hl(0, 'lualine_' .. section .. '_' .. mode, { bg = 'NONE' })
+--     end
+-- end
+--
+-- vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE' })
+-- vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE' })
