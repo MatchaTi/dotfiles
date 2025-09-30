@@ -1,33 +1,37 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-add_newline = true
-# A minimal left prompt
-format = """$directory$character"""
-# move the rest of the prompt to the right
-right_format = """$all $cmd_duration"""
+format = """
+$shell \
+$directory\
+$git_branch\
+$fill\
+$cmd_duration\
+$all\
+$character\
+"""
+
+add_newline = false
 
 [character]
-success_symbol = '[➜](bold fg:blue bg:base)[](bold base)'
-error_symbol = '[✖](bold fg:red bg:base)[](bold base)'
+success_symbol = '[](bold green) [](bold yellow) [ ](bold green)'
+error_symbol = '[ ✗  ](bold red) '
 
-[directory]
-style = 'bold fg:text bg:base'
-format = '[](bold base)[$path ]($style)[$read_only]($read_only_style)'
-read_only_style = 'bold fg:red bg:mantle'
+[cmd_duration]
+min_time = 500
+format = 'took [$duration](bold yellow) '
 
-[git_branch]
-format='[](bold base)[$symbol$branch(:$remote_branch) ](bold bg:base fg:text)[](bold base)'
-style='bold bright fg:white bg:base'
-symbol=" "
+[shell]
+fish_indicator = '󰈺 '
+zsh_indicator = ''
+powershell_indicator = '_'
+unknown_indicator = '_'
+style = 'cyan bold'
+disabled = false
 
-[git_status]
-format = "[[$conflicted](yellow)[$untracked](blue)[$modified$renamed](yellow)[$staged](green)[$deleted](red)($ahead_behind$stashed)]($style)"
-conflicted = " $count "
-untracked = " $count "
-modified = " $count "
-deleted = " $count "
-staged = " $count "
-renamed = " $count "
-stashed = " $count "
-style = "cyan"
-
+[username]
+style_user = 'white bold'
+style_root = 'black bold'
+format = '[$user]($style) '
+disabled = false
+show_always = true
+aliases = { "corpuser034g" = "matchati" }
