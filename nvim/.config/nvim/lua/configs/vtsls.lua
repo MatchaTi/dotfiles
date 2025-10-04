@@ -1,4 +1,4 @@
-require("lspconfig").vtsls.setup({
+vim.lsp.config('vtsls', {
     settings = {
         complete_function_calls = true,
         tsserver_file_preferences = {

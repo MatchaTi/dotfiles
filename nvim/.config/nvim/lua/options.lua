@@ -4,3 +4,4 @@ vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
 vim.cmd("set nowrap")
 vim.opt.mouse = ""
+vim.cmd('colorscheme github_dark')
