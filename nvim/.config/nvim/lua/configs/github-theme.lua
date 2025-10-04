@@ -5,3 +5,5 @@ require('github-theme').setup({
         hide_nc_statusline = true,
     }
 })
+
+vim.cmd('colorscheme github_dark')
