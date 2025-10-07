@@ -1,3 +1,4 @@
+export TERM="xterm-256color"
 export FREETYPE_PROPERTIES="cff:no-stem-darkening=0"
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -28,6 +29,7 @@ alias gcbu='git shortlog -sn --all'
 alias v='nvim'
 alias a='y'
 alias f='rxfetch'
+alias tmux='tmux -2'
 
 # nvim fzf
 nf() {
