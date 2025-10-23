@@ -28,7 +28,7 @@ set $filemanager nautilus
 set $displayManager wdisplays
 
 # Wallpaper
-output * bg ~/dotfiles/wallpapers/mygo-2.png fill
+output * bg ~/dotfiles/wallpapers/sky.png fill
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
