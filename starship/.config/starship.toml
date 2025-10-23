@@ -4,13 +4,20 @@ format = """
 $shell \
 $directory\
 $git_branch\
-$fill\
-$cmd_duration\
-$all\
 $character\
 """
 
-add_newline = false
+right_format = """
+$all\
+$cmd_duration\
+$time\
+"""
+
+add_newline = true
+
+[time]
+disabled = false
+
 
 [character]
 success_symbol = '[](bold green) [](bold yellow) [ ](bold green)'
