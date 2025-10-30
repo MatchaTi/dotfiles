@@ -1,0 +1,15 @@
+## radius
+smart_corner_radius enable
+corner_radius 12
+
+## shadows
+shadows enable
+shadows_on_csd enable
+shadow_blur_radius 20
+shadow_color #0000007f
+
+## blur
+blur enable
+blur_xray disable
+blur_passes 4
+blur_radius 4
