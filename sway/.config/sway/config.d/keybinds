@@ -4,6 +4,7 @@ bindsym $mod+e exec $filemanager
 bindsym $mod+space exec $menu
 bindsym $mod+b exec $browser
 bindsym $mod+w exec $displayManager
+bindsym $mod+d exec $discord
 
 # Screenshoot
 bindsym Mod4+Shift+s exec ~/.config/sway/scripts/screenshoot.sh

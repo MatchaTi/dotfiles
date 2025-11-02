@@ -29,6 +29,7 @@ set $menu wmenu-run
 set $browser firefox
 set $filemanager nautilus
 set $displayManager wdisplays
+set $discord discord
 
 # Wallpaper
 output * bg ~/dotfiles/wallpapers/sky.png fill
