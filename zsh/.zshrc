@@ -107,3 +107,5 @@ export NVM_DIR="$HOME/.nvm"
 
 . "$HOME/.local/bin/env"
 . "/home/adi/.deno/env"
+
+export PATH="$PATH:$HOME/go/bin"
