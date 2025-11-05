@@ -108,5 +108,8 @@ require('gitsigns').setup {
 
         -- Text object
         map({ 'o', 'x' }, 'ih', gitsigns.select_hunk)
+
+        -- always show current line blame
+        gitsigns.toggle_current_line_blame(true)
     end
 }
