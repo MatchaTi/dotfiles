@@ -32,7 +32,7 @@ set $displayManager wdisplays
 set $discord discord
 
 # Wallpaper
-output * bg ~/dotfiles/wallpapers/aimyon-flip.png fill
+output * bg ~/dotfiles/wallpapers/aimyon-3.png fill
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
