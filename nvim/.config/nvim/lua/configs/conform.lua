@@ -28,8 +28,10 @@ require("conform").setup({
         yaml            = { "yamlfmt", stop_after_first = true },
         svelte          = { "prettierd" },
         markdown        = { "prettierd" },
-        jsx             = { "prettierd", "rustywind" },
-        typescriptreact = { "prettierd", "rustywind" },
+        -- jsx             = { "prettierd", "rustywind" },
+        -- typescriptreact = { "prettierd", "rustywind" },
+        jsx             = { "prettierd", "prettier" },
+        typescriptreact = { "prettierd", "prettier" },
     },
 })
 
