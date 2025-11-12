@@ -17,7 +17,7 @@ eval "$(starship init zsh)"
 alias ls='exa --icons'
 alias ll='exa --icons -l'
 alias lla='exa --icons -a -l'
-alias llt='exa --icons -T -L 2'
+alias llt='exa --icons -T -L 2 --git-ignore'
 alias py='python3'
 alias grep='grep --color=auto'
 alias lg='lazygit'
