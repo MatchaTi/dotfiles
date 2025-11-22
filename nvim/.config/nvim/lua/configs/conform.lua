@@ -13,7 +13,7 @@ local function biome_or_prettier(bufnr)
         upward = true,
         path = vim.api.nvim_buf_get_name(bufnr),
     })
-    
+
     if #biome_config > 0 then
         return { "biome" }
     else
@@ -32,8 +32,8 @@ require("conform").setup({
     formatters_by_ft = {
         lua             = { "stylua" },
         python          = { "isort", "black" },
-        javascript      = { "prettierd", "prettier", stop_after_first = true },
-        typescript      = { "prettierd", "prettier", stop_after_first = true },
+        javascript      = biome_or_prettier,
+        typescript      = biome_or_prettier,
         json            = { "prettierd", "prettier", stop_after_first = true },
         astro           = { "prettier", stop_after_first = true },
         yaml            = { "yamlfmt", stop_after_first = true },
