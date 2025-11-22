@@ -8,7 +8,18 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     end,
 })
 
--- return options
+local function biome_or_prettier(bufnr)
+    local biome_config = vim.fs.find({ "biome.json", "biome.jsonc" }, {
+        upward = true,
+        path = vim.api.nvim_buf_get_name(bufnr),
+    })
+    
+    if #biome_config > 0 then
+        return { "biome" }
+    else
+        return { "prettierd", "prettier", stop_after_first = true }
+    end
+end
 
 require("conform").setup({
     notify_on_error = false,
@@ -30,8 +41,8 @@ require("conform").setup({
         markdown        = { "prettierd" },
         -- jsx             = { "prettierd", "rustywind" },
         -- typescriptreact = { "prettierd", "rustywind" },
-        jsx             = { "prettierd", "prettier" },
-        typescriptreact = { "prettierd", "prettier" },
+        jsx             = biome_or_prettier,
+        typescriptreact = biome_or_prettier,
     },
 })
 
