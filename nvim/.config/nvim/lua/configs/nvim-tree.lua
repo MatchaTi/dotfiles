@@ -14,6 +14,9 @@ require("nvim-tree").setup({
         width = 25,
     },
     renderer = {
+        indent_markers = {
+            enable = true
+        },
         group_empty = true,
         root_folder_label = false,
     },
