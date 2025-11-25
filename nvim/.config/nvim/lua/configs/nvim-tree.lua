@@ -4,6 +4,9 @@ vim.api.nvim_set_hl(0, 'WinSeparator', { fg = '#0d1117' })
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+vim.cmd([[highlight NvimTreeClosedFolderIcon guifg=#FDCE4C]])
+vim.cmd([[highlight NvimTreeOpenedFolderIcon guifg=#FDCE4C]])
+
 vim.opt.termguicolors = true
 
 require("nvim-tree").setup({
