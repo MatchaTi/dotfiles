@@ -230,6 +230,11 @@ return {
         ---@type render.md.UserConfig
         opts = {},
     },
+    {
+        "folke/todo-comments.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        opts = {}
+    }
     -- {
     --     'akinsho/bufferline.nvim',
     --     version = "*",

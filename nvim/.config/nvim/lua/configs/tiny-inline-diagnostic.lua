@@ -11,7 +11,7 @@ require("tiny-inline-diagnostic").setup {
     },
     options = {
         -- Show the source of the diagnostic.
-        show_source = false,
+        show_source = true,
 
         -- Use your defined signs in the diagnostic config table.
         use_icons_from_diagnostic = true,
