@@ -40,7 +40,7 @@ set $right l
 # set $term kitty
 set $term foot
 set $menu wmenu-run
-set $browser brave
+set $browser firefox
 set $filemanager nautilus
 set $displayManager wdisplays
 set $discord discord

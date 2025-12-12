@@ -1,4 +1,5 @@
 export TERM="xterm-256color"
+export BROWSER=firefox
 export FREETYPE_PROPERTIES="cff:no-stem-darkening=0"
 export ZSH="$HOME/.oh-my-zsh"
 
