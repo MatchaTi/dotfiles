@@ -6,16 +6,16 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' 
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 vim.keymap.set("n", "<leader>fr", require("telescope.builtin").lsp_references, { desc = "Go to references" })
 vim.keymap.set("n", "<leader>fe", function()
-    require("telescope.builtin").diagnostics({
-        bufnr = nil,
-    })
+  require("telescope.builtin").diagnostics({
+    bufnr = nil,
+  })
 end, { desc = "Show diagnostics (all buffers)" })
 
 -- telescope file browser
 vim.keymap.set("n", "<space>e", ":Telescope file_browser<CR>")
 vim.keymap.set("n", "<space>e", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")
 vim.keymap.set("n", "<space>e", function()
-    require("telescope").extensions.file_browser.file_browser()
+  require("telescope").extensions.file_browser.file_browser()
 end)
 
 -- ESC
@@ -51,3 +51,15 @@ vim.keymap.set('n', 's', '/', { silent = true, desc = 'Search' })
 
 -- nvim tree
 vim.keymap.set('n', '<leader>w', ':NvimTreeToggle<CR>', { silent = true, desc = 'Toggle Nvim Tree' })
+
+-- toggle lualine
+vim.api.nvim_set_keymap("n", "<Leader>cr", "", {
+  callback = function()
+    local statusline = vim.o.statusline
+
+    require("lualine").hide({
+      place = { "statusline" },
+      unhide = statusline == "" or statusline == "%#Normal#",
+    })
+  end,
+})
