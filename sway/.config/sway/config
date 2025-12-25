@@ -20,8 +20,8 @@ default_border pixel 1
 default_floating_border pixel 1
 # smart_borders on
 
-gaps inner 24
-gaps outer 24
+gaps inner 12
+gaps outer 120
 
 # Font
 font pango:JetBrainsMono Nerd Font 8
@@ -46,7 +46,7 @@ set $displayManager wdisplays
 set $discord discord
 
 # Wallpaper
-output * bg ~/dotfiles/wallpapers/aimyon-3.png fill
+output * bg ~/dotfiles/wallpapers/dark-mode-windows.jpg fill
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
