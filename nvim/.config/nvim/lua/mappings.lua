@@ -63,3 +63,6 @@ vim.api.nvim_set_keymap("n", "<Leader>cr", "", {
     })
   end,
 })
+
+-- See git status via telescope
+vim.keymap.set('n', '<leader>gs', builtin.git_status, { desc = "Telescope Git Status" })
