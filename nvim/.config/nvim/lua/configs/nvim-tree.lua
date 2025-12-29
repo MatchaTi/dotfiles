@@ -10,20 +10,21 @@ vim.cmd([[highlight NvimTreeOpenedFolderIcon guifg=#FDCE4C]])
 vim.opt.termguicolors = true
 
 require("nvim-tree").setup({
-    sort = {
-        sorter = "case_sensitive",
+  sort = {
+    sorter = "case_sensitive",
+  },
+  view = {
+    width = 40,
+    side = "right"
+  },
+  renderer = {
+    indent_markers = {
+      enable = true
     },
-    view = {
-        width = 25,
-    },
-    renderer = {
-        indent_markers = {
-            enable = true
-        },
-        group_empty = true,
-        root_folder_label = false,
-    },
-    filters = {
-        dotfiles = true,
-    },
+    group_empty = true,
+    root_folder_label = false,
+  },
+  filters = {
+    dotfiles = true,
+  },
 })

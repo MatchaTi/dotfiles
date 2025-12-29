@@ -66,3 +66,7 @@ vim.api.nvim_set_keymap("n", "<Leader>cr", "", {
 
 -- See git status via telescope
 vim.keymap.set('n', '<leader>gs', builtin.git_status, { desc = "Telescope Git Status" })
+
+-- toggle visibility line numbers
+vim.keymap.set('n', '<leader>ln', ':set invnumber<CR>', { silent = true, desc = 'Toggle Line Numbers' })
+vim.keymap.set('n', '<leader>lr', ':set relativenumber!<CR>', { silent = true, desc = 'Toggle Relative Line Numbers' })
