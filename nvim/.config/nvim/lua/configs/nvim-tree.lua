@@ -6,6 +6,7 @@ vim.g.loaded_netrwPlugin = 1
 
 vim.cmd([[highlight NvimTreeClosedFolderIcon guifg=#FDCE4C]])
 vim.cmd([[highlight NvimTreeOpenedFolderIcon guifg=#FDCE4C]])
+vim.opt.fillchars = vim.opt.fillchars + { vert = ' ' }
 
 vim.opt.termguicolors = true
 
