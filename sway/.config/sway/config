@@ -1,5 +1,6 @@
 # Run Services
 exec udiskie --no-automount --tray
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 # exec waybar
 
 set $bg       #1f1f1f   
@@ -18,13 +19,13 @@ client.placeholder      #000000    #0c0c0c     $text_color  #000000    #0c0c0c
 # Border
 default_border pixel 1
 default_floating_border pixel 1
-# smart_borders on
+smart_borders on
 
-gaps inner 12
-gaps outer 120
+# gaps inner 12
+# gaps outer 120
 
 # Font
-font pango:JetBrainsMono Nerd Font 8
+font pango:SauceCodePro Nerd Font 12
 
 # Mod1 for Alt.
 # Mod4 for Home.
@@ -39,7 +40,7 @@ set $right l
 # Apps
 # set $term kitty
 set $term foot
-set $menu wmenu-run
+set $menu fuzzel
 set $browser firefox
 set $filemanager nautilus
 set $displayManager wdisplays
@@ -50,8 +51,4 @@ output * bg ~/dotfiles/wallpapers/dark-mode-windows.jpg fill
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
-include ~/.config/sway/swayfx
-
-set $opacity 1
-for_window [class="kitty"] opacity $opacity
-for_window [app_id="kitty"] opacity $opacity
+# include ~/.config/sway/swayfx
