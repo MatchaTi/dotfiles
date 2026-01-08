@@ -132,16 +132,16 @@ return {
       require 'configs.scope'
     end
   },
-  {
-    "lukas-reineke/indent-blankline.nvim",
-    main = "ibl",
-    ---@module "ibl"
-    ---@type ibl.config
-    opts = {},
-    config = function()
-      require 'configs.indent-blankline'
-    end
-  },
+  -- {
+  --   "lukas-reineke/indent-blankline.nvim",
+  --   main = "ibl",
+  --   ---@module "ibl"
+  --   ---@type ibl.config
+  --   opts = {},
+  --   config = function()
+  --     require 'configs.indent-blankline'
+  --   end
+  -- },
 
   {
     'numToStr/Comment.nvim',
