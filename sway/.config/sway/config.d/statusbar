@@ -1,7 +1,7 @@
 bar {
-    position bottom
+    position top
     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-    mode hide
+    #mode hide
   
     colors {
         statusline #ffffff

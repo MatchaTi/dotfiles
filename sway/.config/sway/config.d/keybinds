@@ -7,20 +7,20 @@ bindsym $mod+w exec $displayManager
 bindsym $mod+d exec $discord
 
 # Screenshoot
-bindsym Mod4+Shift+s exec ~/.config/sway/scripts/screenshoot.sh
-bindsym Mod4+s exec grim -g "$(slurp)" - | wl-copy
-bindsym $mod+p exec grim
+bindsym Mod4+Shift+s exec ~/.config/sway/scripts/screenshoot.sh && notify-send "Screenshot taken"
+bindsym Mod4+s exec grim -g "$(slurp)" - | wl-copy && notify-send "Screenshot taken"
+bindsym $mod+p exec grim - | wl-copy && notify-send "Screenshot taken"
 
 # Audio
-bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
-bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
-bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
-bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle && notify-send -h string:x-canonical-private-synchronous:audio "Mute Toggled"
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% && notify-send -h string:x-canonical-private-synchronous:audio "Volume Down" "Level: $(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]+(?=%)' | head -1)%"
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% && notify-send -h string:x-canonical-private-synchronous:audio "Volume Up" "Level: $(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]+(?=%)' | head -1)%"
+bindsym --locked XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle && notify-send -h string:x-canonical-private-synchronous:mic "Mic Toggled"
 bindsym $mod+Shift+p exec pavucontrol
 
 # Brightness
-bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
-bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%- && notify-send -h string:x-canonical-private-synchronous:brightness "Brightness" "Level: $(( $(brightnessctl get) * 100 / $(brightnessctl max) ))%" -t 2000
+bindsym --locked XF86MonBrightnessUp exec brightnessctl set +5% && notify-send -h string:x-canonical-private-synchronous:brightness "Brightness" "Level: $(( $(brightnessctl get) * 100 / $(brightnessctl max) ))%" -t 2000
 
 # Reload Sway Config
 bindsym $mod+Shift+c reload

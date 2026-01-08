@@ -1,6 +1,7 @@
 # Run Services
 exec udiskie --no-automount --tray
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec mako
 # exec waybar
 
 set $bg       #1f1f1f   
@@ -9,17 +10,17 @@ set $inactive #333333
 set $text_color   #ffffff   
 
 # class                 border     background  text         indicator  child_border
-client.focused          $active    $bg         $text_color  $active    $active
-client.focused_inactive $inactive  $bg         $text_color  $inactive  $inactive
-client.unfocused        $bg        #0d1117     #888888      $bg        $inactive
-client.urgent           #e06c75    #e06c75     $text_color  #e06c75    #e06c75
-client.placeholder      #000000    #0c0c0c     $text_color  #000000    #0c0c0c
+#client.focused          $active    $bg         $text_color  $active    $active
+#client.focused_inactive $inactive  $bg         $text_color  $inactive  $inactive
+#client.unfocused        $bg        #0d1117     #888888      $bg        $inactive
+#client.urgent           #e06c75    #e06c75     $text_color  #e06c75    #e06c75
+#client.placeholder      #000000    #0c0c0c     $text_color  #000000    #0c0c0c
 
 
 # Border
-default_border pixel 1
-default_floating_border pixel 1
-smart_borders on
+#default_border pixel 1
+#default_floating_border pixel 1
+#smart_borders on
 
 # gaps inner 12
 # gaps outer 120
