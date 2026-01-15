@@ -1,38 +1,95 @@
-local custom_theme = require('lualine.themes.auto')
+local theme = {
+  normal = {
+    a = { bg = "None" },
+    b = { bg = "None" },
+    c = { bg = "None" },
+    x = { bg = "None" },
+    y = { bg = "None" },
+    z = { bg = "None" },
+  },
+  insert = {
+    a = { bg = "None" },
+    b = { bg = "None" },
+    c = { bg = "None" },
+    x = { bg = "None" },
+    y = { bg = "None" },
+    z = { bg = "None" },
+  },
+  visual = {
+    a = { bg = "None" },
+    b = { bg = "None" },
+    c = { bg = "None" },
+    x = { bg = "None" },
+    y = { bg = "None" },
+    z = { bg = "None" },
+  },
+  replace = {
+    a = { bg = "None" },
+    b = { bg = "None" },
+    c = { bg = "None" },
+    x = { bg = "None" },
+    y = { bg = "None" },
+    z = { bg = "None" },
+  },
+  command = {
+    a = { bg = "None" },
+    b = { bg = "None" },
+    c = { bg = "None" },
+    x = { bg = "None" },
+    y = { bg = "None" },
+    z = { bg = "None" },
+  },
+  inactive = {
+    a = { bg = "None" },
+    b = { bg = "None" },
+    c = { bg = "None" },
+    x = { bg = "None" },
+    y = { bg = "None" },
+    z = { bg = "None" },
+  },
+}
 
-local function make_transparent(mode_sections)
-  if mode_sections.c then mode_sections.c.bg = 'NONE' end
-  if mode_sections.x then mode_sections.x.bg = 'NONE' end
-end
-
-for _, mode in pairs(custom_theme) do
-  make_transparent(mode)
+local function vimIcon()
+  return [[]]
 end
 
 require('lualine').setup {
   options = {
-    theme = custom_theme,
-    component_separators = '',
-    section_separators = { left = '', right = '' },
+    icons_enabled = true,
+    theme = theme,
+    -- component_separators = { left = '|', right = '|' },
+    -- section_separators = { left = '', right = '' },
+    -- component_separators = { left = '', right = '' },
+    -- section_separators = { left = '', right = '' },
+    component_separators = { left = '', right = '' },
+    section_separators = { left = '', right = '' },
     globalstatus = true,
   },
   sections = {
-    lualine_a = { { 'mode', separator = { left = '', right = '' }, right_padding = 2 } },
-    lualine_b = { { 'branch', separator = { left = '', right = '' }, right_padding = 2 } },
-    lualine_c = {
-      'filename',
+    lualine_a = { { vimIcon }, 'mode' },
+    lualine_b = { 'branch' },
+    lualine_c = { { 'filename', path = 1 },
       {
         'diff',
-        colored = true,
-      },
+        symbols = { added = ' ', modified = ' ', removed = ' ',
+          untracked = ' ', renamed = ' ', stashed = ' '
+        },
+        colored = true
+      }
+      , 'diagnostics'
     },
-    lualine_x = {
-      { 'diagnostics', sources = { 'nvim_diagnostic' }, symbols = { error = ' ', warn = ' ', info = ' ' } },
-    },
-    lualine_y = { { 'filetype', separator = { left = '', right = '' }, left_padding = 2 } },
-    lualine_z = { { 'progress', separator = { left = '', right = '' }, left_padding = 2 } },
+    lualine_x = { 'encoding', 'fileformat', 'filetype' },
+    lualine_y = { 'progress' },
+    lualine_z = { 'location' }
   },
 }
+local modes = { 'normal', 'insert', 'visual', 'replace', 'command', 'terminal' }
+local sections = { 'a', 'b', 'c', 'x', 'y', 'z' }
+for _, mode in ipairs(modes) do
+  for _, section in ipairs(sections) do
+    vim.api.nvim_set_hl(0, 'lualine_' .. section .. '_' .. mode, { bg = 'NONE' })
+  end
+end
 
-vim.cmd([[hi StatusLine guibg=NONE ctermbg=NONE]])
-vim.cmd([[hi StatusLineNC guibg=NONE ctermbg=NONE]])
+vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE' })
+vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE' })
