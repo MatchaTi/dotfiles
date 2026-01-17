@@ -15,8 +15,8 @@ require("nvim-tree").setup({
     sorter = "case_sensitive",
   },
   view = {
-    width = 28,
-    side = "right"
+    width = 24,
+    side = "left"
   },
   renderer = {
     indent_markers = {

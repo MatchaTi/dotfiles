@@ -1,3 +1,6 @@
+local palette = require('github-theme.palette').load('github_dark')
+-- print(vim.inspect(palette))
+
 local theme = {
   normal = {
     a = { bg = "None" },
@@ -67,27 +70,35 @@ require('lualine').setup {
   },
   sections = {
     lualine_a = { { vimIcon }, 'mode' },
-    lualine_b = { 'branch' },
-    lualine_c = { { 'filename', path = 1 },
+    lualine_b = {
+      { 'filename', path = 10 },
+    },
+    lualine_c = {
+      { 'branch', icon = '' },
       {
         'diff',
-        symbols = { added = ' ', modified = ' ', removed = ' ',
-          untracked = ' ', renamed = ' ', stashed = ' '
+        symbols = { added = " ", modified = " ", removed = " ",
+          untracked = ' ', renamed = '󰜵 ', stashed = '󰆓 '
         },
         colored = true
-      }
-      , 'diagnostics'
+      },
     },
-    lualine_x = { 'encoding', 'fileformat', 'filetype' },
-    lualine_y = { 'progress' },
-    lualine_z = { 'location' }
+    lualine_x = {
+      {
+        'diagnostics',
+        symbols = { error = " ", warn = " ", info = " ", hint = " " },
+      },
+      'fileformat' },
+    lualine_y = { 'location' },
+    lualine_z = { 'filetype' }
   },
 }
+
 local modes = { 'normal', 'insert', 'visual', 'replace', 'command', 'terminal' }
 local sections = { 'a', 'b', 'c', 'x', 'y', 'z' }
 for _, mode in ipairs(modes) do
   for _, section in ipairs(sections) do
-    vim.api.nvim_set_hl(0, 'lualine_' .. section .. '_' .. mode, { bg = 'NONE' })
+    vim.api.nvim_set_hl(0, 'lualine_' .. section .. '_' .. mode, { bg = 'NONE', fg = palette.fg.muted })
   end
 end
 
