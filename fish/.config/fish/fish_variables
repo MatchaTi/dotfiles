@@ -2,4 +2,4 @@
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
 SETUVAR __fish_initialized:4300
-SETUVAR fish_user_paths:/home/adi/go/bin
+SETUVAR fish_user_paths:/home/adi/\x2elocal/bin\x1e/home/adi/go/bin

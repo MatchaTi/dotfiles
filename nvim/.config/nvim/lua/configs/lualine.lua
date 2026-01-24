@@ -59,13 +59,13 @@ end
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = theme,
+    -- theme = theme,
     -- component_separators = { left = '|', right = '|' },
     -- section_separators = { left = '', right = '' },
-    -- component_separators = { left = '', right = '' },
-    -- section_separators = { left = '', right = '' },
-    component_separators = { left = '', right = '' },
-    section_separators = { left = '', right = '' },
+    component_separators = { left = '', right = '' },
+    section_separators = { left = '', right = '' },
+    -- component_separators = { left = '', right = '' },
+    -- section_separators = { left = '', right = '' },
     globalstatus = true,
   },
   sections = {
@@ -94,13 +94,13 @@ require('lualine').setup {
   },
 }
 
-local modes = { 'normal', 'insert', 'visual', 'replace', 'command', 'terminal' }
-local sections = { 'a', 'b', 'c', 'x', 'y', 'z' }
-for _, mode in ipairs(modes) do
-  for _, section in ipairs(sections) do
-    vim.api.nvim_set_hl(0, 'lualine_' .. section .. '_' .. mode, { bg = 'NONE', fg = palette.fg.muted })
-  end
-end
-
-vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE' })
-vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE' })
+-- local modes = { 'normal', 'insert', 'visual', 'replace', 'command', 'terminal' }
+-- local sections = { 'a', 'b', 'c', 'x', 'y', 'z' }
+-- for _, mode in ipairs(modes) do
+--   for _, section in ipairs(sections) do
+--     vim.api.nvim_set_hl(0, 'lualine_' .. section .. '_' .. mode, { bg = 'NONE', fg = palette.fg.muted })
+--   end
+-- end
+--
+-- vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE' })
+-- vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE' })
