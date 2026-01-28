@@ -71,9 +71,6 @@ require('lualine').setup {
   sections = {
     lualine_a = { { vimIcon }, 'mode' },
     lualine_b = {
-      { 'filename', path = 10 },
-    },
-    lualine_c = {
       { 'branch', icon = '' },
       {
         'diff',
@@ -82,16 +79,16 @@ require('lualine').setup {
         },
         colored = true
       },
-    },
-    lualine_x = {
       {
         'diagnostics',
         symbols = { error = " ", warn = " ", info = " ", hint = " " },
-      },
-      'fileformat' },
-    lualine_y = { 'location' },
-    lualine_z = { 'filetype' }
-  },
+      }
+    },
+    lualine_c = { 'filename' },
+    lualine_x = { 'encoding', 'fileformat', 'filetype' },
+    lualine_y = { 'progress' },
+    lualine_z = { 'location' }
+  }
 }
 
 -- local modes = { 'normal', 'insert', 'visual', 'replace', 'command', 'terminal' }

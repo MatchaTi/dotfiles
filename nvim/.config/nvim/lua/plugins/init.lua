@@ -236,6 +236,15 @@ return {
     opts = {}
   },
   -- {
+  --   "neanias/everforest-nvim",
+  --   version = false,
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     require 'configs.everforest'
+  --   end,
+  -- },
+  -- {
   --   "folke/noice.nvim",
   --   event = "VeryLazy",
   --   opts = {
@@ -250,12 +259,12 @@ return {
   --     "rcarriga/nvim-notify",
   --   }
   -- }
-  -- {
-  --   'akinsho/bufferline.nvim',
-  --   version = "*",
-  --   dependencies = 'nvim-tree/nvim-web-devicons',
-  --   config = function()
-  --     require 'configs.bufferline'
-  --   end
-  -- }
+  {
+    'akinsho/bufferline.nvim',
+    version = "*",
+    dependencies = 'nvim-tree/nvim-web-devicons',
+    config = function()
+      require 'configs.bufferline'
+    end
+  }
 }
