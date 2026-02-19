@@ -11,12 +11,6 @@ vim.keymap.set("n", "<leader>fe", function()
   })
 end, { desc = "Show diagnostics (all buffers)" })
 
--- telescope file browser
-vim.keymap.set("n", "<space>e", ":Telescope file_browser<CR>")
-vim.keymap.set("n", "<space>e", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")
-vim.keymap.set("n", "<space>e", function()
-  require("telescope").extensions.file_browser.file_browser()
-end)
 
 -- ESC
 vim.keymap.set('i', 'jk', '<ESC>', { desc = 'Enter Command Mode' })
@@ -50,23 +44,7 @@ vim.keymap.set('n', ']', ':noh<CR>', { silent = true, desc = 'Clear Search Highl
 vim.keymap.set('n', 's', '/', { silent = true, desc = 'Search' })
 
 -- nvim tree
-vim.keymap.set('n', '<leader>w', ':NvimTreeToggle<CR>', { silent = true, desc = 'Toggle Nvim Tree' })
-
--- toggle lualine
-vim.api.nvim_set_keymap("n", "<Leader>cr", "", {
-  callback = function()
-    local statusline = vim.o.statusline
-
-    require("lualine").hide({
-      place = { "statusline" },
-      unhide = statusline == "" or statusline == "%#Normal#",
-    })
-  end,
-})
+-- vim.keymap.set('n', '<leader>w', ':NvimTreeToggle<CR>', { silent = true, desc = 'Toggle Nvim Tree' })
 
 -- See git status via telescope
 vim.keymap.set('n', '<leader>gs', builtin.git_status, { desc = "Telescope Git Status" })
-
--- toggle visibility line numbers
-vim.keymap.set('n', '<leader>ln', ':set invnumber<CR>', { silent = true, desc = 'Toggle Line Numbers' })
-vim.keymap.set('n', '<leader>lr', ':set relativenumber!<CR>', { silent = true, desc = 'Toggle Relative Line Numbers' })
