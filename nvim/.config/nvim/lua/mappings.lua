@@ -48,3 +48,14 @@ vim.keymap.set('n', 's', '/', { silent = true, desc = 'Search' })
 
 -- See git status via telescope
 vim.keymap.set('n', '<leader>gs', builtin.git_status, { desc = "Telescope Git Status" })
+
+-- Toggle mouse disable/enable
+vim.keymap.set('n', '<leader>tm', function()
+  if vim.o.mouse == 'a' then
+    vim.o.mouse = ''
+    print('Mouse disabled')
+  else
+    vim.o.mouse = 'a'
+    print('Mouse enabled')
+  end
+end, { desc = 'Toggle Mouse' })
