@@ -44,7 +44,7 @@ vim.keymap.set('n', ']', ':noh<CR>', { silent = true, desc = 'Clear Search Highl
 vim.keymap.set('n', 's', '/', { silent = true, desc = 'Search' })
 
 -- nvim tree
--- vim.keymap.set('n', '<leader>w', ':NvimTreeToggle<CR>', { silent = true, desc = 'Toggle Nvim Tree' })
+vim.keymap.set('n', '<leader>w', ':NvimTreeToggle<CR>', { silent = true, desc = 'Toggle Nvim Tree' })
 
 -- See git status via telescope
 vim.keymap.set('n', '<leader>gs', builtin.git_status, { desc = "Telescope Git Status" })
