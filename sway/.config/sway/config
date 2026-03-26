@@ -18,9 +18,13 @@ set $text_color   #ffffff
 
 
 # Border
-#default_border pixel 1
-#default_floating_border pixel 1
-#smart_borders on
+default_border pixel 1
+default_floating_border pixel 1
+smart_borders on
+
+# Konfigurasi Monitor: eDP-1 di kiri, HDMI di kanan
+output eDP-1 position 0 0 resolution 1920x1200@59.999Hz
+output HDMI-A-1 position 1920 0 resolution 1920x1080@74.973Hz
 
 # gaps inner 12
 # gaps outer 120
