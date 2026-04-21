@@ -2,6 +2,9 @@ if status is-interactive
 # Commands to run in interactive sessions can go here
 end
 
+# Set the default editor to nvim
+set --export EDITOR nvim
+
 # aliases
 alias ls='exa --icons'
 alias ll='exa --icons -l'
@@ -69,3 +72,6 @@ function a
 	end
 	rm -f -- "$tmp"
 end
+
+# OpenClaw Completion
+source "/home/adi/.openclaw/completions/openclaw.fish"
