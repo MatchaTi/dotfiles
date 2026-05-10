@@ -73,5 +73,5 @@ function a
 	rm -f -- "$tmp"
 end
 
-# OpenClaw Completion
-source "/home/adi/.openclaw/completions/openclaw.fish"
+# opencode
+fish_add_path /home/adi/.opencode/bin
