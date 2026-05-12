@@ -47,3 +47,6 @@ vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {})
 
 -- lazygit
 vim.keymap.set('n', '<leader>lg', ':LazyGit<CR>', { silent = true, desc = 'Open LazyGit' })
+
+-- delete buffer
+vim.keymap.set('n', '<C-\\>', ':bd<CR>', { silent = true, desc = 'Delete buffer' })
