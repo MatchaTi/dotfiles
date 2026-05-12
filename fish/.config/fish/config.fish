@@ -1,3 +1,18 @@
+# Start gnome-keyring-daemon and export variables
+if status is-login
+    set -x (gnome-keyring-daemon --start --components=pkcs11,secrets,ssh | string split '=')
+end
+
+if test -z "$DBUS_SESSION_BUS_ADDRESS"
+    eval (dbus-launch --sh-syntax)
+end
+
+if status is-login
+    if test -z "$GNOME_KEYRING_CONTROL"
+        set -x (gnome-keyring-daemon --start --components=pkcs11,secrets,ssh | string split '=')
+    end
+end
+
 if status is-interactive
 # Commands to run in interactive sessions can go here
 end
