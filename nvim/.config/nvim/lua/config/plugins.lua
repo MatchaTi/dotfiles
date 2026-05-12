@@ -1,25 +1,26 @@
 vim.pack.add({
-    { src = "https://github.com/nvim-lua/plenary.nvim" },
-    { src = "https://github.com/nvim-telescope/telescope.nvim" },
-    { src = "https://github.com/neovim/nvim-lspconfig" },
-    { src = "https://github.com/mason-org/mason.nvim" },
-    { src = "https://github.com/mason-org/mason-lspconfig.nvim" },
-    { src = "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim" },
-    { src = "https://github.com/stevearc/conform.nvim" },
-    { src = "https://github.com/lewis6991/gitsigns.nvim" },
-    { src = "https://github.com/nvim-tree/nvim-tree.lua" },
-    { src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim" },
-    { src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
-    { src = "https://github.com/hrsh7th/cmp-buffer" },
-    { src = "https://github.com/hrsh7th/cmp-path" },
-    { src = "https://github.com/hrsh7th/cmp-cmdline" },
-    { src = "https://github.com/hrsh7th/nvim-cmp" },
-    { src = "https://github.com/github/copilot.vim" },
-    { src = "https://github.com/nvim-tree/nvim-web-devicons" },
-    { src = "https://github.com/yioneko/nvim-vtsls" },
-    { src = "https://github.com/nvim-lualine/lualine.nvim" },
-    { src = "https://github.com/projekt0n/github-nvim-theme" },
-    { src = "https://github.com/kdheepak/lazygit.nvim" },
+    "https://github.com/nvim-lua/plenary.nvim",
+    "https://github.com/nvim-telescope/telescope.nvim",
+    "https://github.com/neovim/nvim-lspconfig",
+    "https://github.com/mason-org/mason.nvim",
+    "https://github.com/mason-org/mason-lspconfig.nvim",
+    "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim",
+    "https://github.com/stevearc/conform.nvim",
+    "https://github.com/lewis6991/gitsigns.nvim",
+    "https://github.com/nvim-tree/nvim-tree.lua",
+    "https://github.com/rachartier/tiny-inline-diagnostic.nvim",
+    "https://github.com/hrsh7th/cmp-nvim-lsp",
+    "https://github.com/hrsh7th/cmp-buffer",
+    "https://github.com/hrsh7th/cmp-path",
+    "https://github.com/hrsh7th/cmp-cmdline",
+    "https://github.com/hrsh7th/nvim-cmp",
+    "https://github.com/github/copilot.vim",
+    "https://github.com/nvim-tree/nvim-web-devicons",
+    "https://github.com/yioneko/nvim-vtsls",
+    "https://github.com/nvim-lualine/lualine.nvim",
+    "https://github.com/projekt0n/github-nvim-theme",
+    "https://github.com/kdheepak/lazygit.nvim",
+    "https://github.com/MeanderingProgrammer/render-markdown.nvim"
 })
 
 require("plugins.telescope")
@@ -32,3 +33,4 @@ require("plugins.copilot")
 require("plugins.vtsls")
 require("plugins.lualine")
 require("plugins.github-theme")
+require("plugins.render-markdown")
