@@ -3,12 +3,14 @@ exec udiskie --no-automount --tray
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec mako
+# Untuk i3/Sway/Hyprland
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 # exec waybar
 
-set $bg       #1f1f1f   
-set $active   #333333   
-set $inactive #333333   
-set $text_color   #ffffff   
+set $bg       #1f1f1f
+set $active   #333333
+set $inactive #333333
+set $text_color   #ffffff
 
 # class                 border     background  text         indicator  child_border
 client.focused          $active    $bg         $text_color  $active    $active
