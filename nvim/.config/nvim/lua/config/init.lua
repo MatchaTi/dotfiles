@@ -1,0 +1,5 @@
+require("config.options")
+require("config.diagnostics")
+require("config.plugins")
+require("config.mappings")
+require("config.lspconfig")

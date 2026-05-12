@@ -11,21 +11,21 @@ vim.opt.fillchars = vim.opt.fillchars + { vert = ' ' }
 vim.opt.termguicolors = true
 
 require("nvim-tree").setup({
-  sort = {
-    sorter = "case_sensitive",
-  },
-  view = {
-    width = 24,
-    side = "left"
-  },
-  renderer = {
-    indent_markers = {
-      enable = true
+    sort = {
+        sorter = "case_sensitive",
     },
-    group_empty = true,
-    root_folder_label = false,
-  },
-  filters = {
-    dotfiles = true,
-  },
+    view = {
+        width = 24,
+        side = "left"
+    },
+    renderer = {
+        indent_markers = {
+            enable = true
+        },
+        group_empty = true,
+        root_folder_label = false,
+    },
+    filters = {
+        dotfiles = true,
+    },
 })
