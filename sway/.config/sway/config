@@ -3,7 +3,6 @@ exec udiskie --no-automount --tray
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec mako
-# Untuk i3/Sway/Hyprland
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 # exec waybar
 
@@ -48,7 +47,7 @@ set $right l
 # Apps
 # set $term kitty
 set $term foot
-set $menu fuzzel
+set $menu dmenu_run -l 10 -p "Run: " -fn "SauceCodePro Nerd Font-12" -nb "#1f1f1f" -nf "#ffffff" -sb "#333333" -sf "#ffffff"
 set $browser firefox
 set $filemanager nautilus
 set $displayManager wdisplays
