@@ -47,7 +47,7 @@ set $right l
 # Apps
 # set $term kitty
 set $term foot
-set $menu dmenu_run -l 10 -p "Run: " -fn "SauceCodePro Nerd Font-12" -nb "#1f1f1f" -nf "#ffffff" -sb "#333333" -sf "#ffffff"
+set $menu dmenu_run -l 10 -p "Run: " -nb "#0d1117" -nf "#ffffff" -sb "#2c3b4e" -sf "#ffffff"
 set $browser firefox
 set $filemanager nautilus
 set $displayManager wdisplays
