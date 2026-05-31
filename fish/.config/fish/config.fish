@@ -90,3 +90,7 @@ end
 
 # opencode
 fish_add_path /home/adi/.opencode/bin
+
+
+# Added by Antigravity CLI installer
+set -gx PATH "/home/adi/.local/bin" $PATH
