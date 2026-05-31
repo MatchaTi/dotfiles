@@ -5,7 +5,7 @@ while true; do
     
     case "$status" in
         "Charging")
-            status_jp="充電中"
+            status_jp=" 充電中"
             ;;
         "Discharging")
             status_jp="放電中"
