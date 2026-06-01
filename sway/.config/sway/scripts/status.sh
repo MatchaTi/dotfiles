@@ -1,7 +1,29 @@
 #!/bin/sh
+
+notified_low=0
+notified_charged=0
+
 while true; do
     status=$(cat /sys/class/power_supply/BAT0/status)
     capacity=$(cat /sys/class/power_supply/BAT0/capacity)
+    
+    # Reset notifikasi jika status baterai berubah dari batas
+    if [ "$capacity" -gt 10 ]; then
+        notified_low=0
+    fi
+    if [ "$capacity" -lt 70 ] || [ "$status" != "Charging" ]; then
+        notified_charged=0
+    fi
+
+    if [ "$capacity" -le 10 ] && [ "$status" = "Discharging" ] && [ "$notified_low" -eq 0 ]; then
+        GTK_THEME=Adwaita:dark yad --warning --title="バッテリー低下" --text="バッテリー残量は $capacity% です。\nすぐに充電してください！" --button="確認:0" --center --on-top &
+        notified_low=1
+    fi
+
+    if [ "$capacity" -ge 70 ] && [ "$status" = "Charging" ] && [ "$notified_charged" -eq 0 ]; then
+        GTK_THEME=Adwaita:dark yad --info --title="充電完了" --text="バッテリーが $capacity% に達しました。\n充電器を外すことができます。" --button="確認:0" --center --on-top &
+        notified_charged=1
+    fi
     
     case "$status" in
         "Charging")
