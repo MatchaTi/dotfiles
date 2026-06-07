@@ -4,6 +4,7 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DE
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec mako
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
+exec fcitx5 -d
 # exec waybar
 
 set $bg       #1f1f1f
@@ -54,7 +55,7 @@ set $displayManager wdisplays
 set $discord discord
 
 # Wallpaper
-output * bg ~/dotfiles/wallpapers/AnimeRailway.png fill
+output * bg ~/dotfiles/wallpapers/purple-wave.png fill
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
