@@ -45,6 +45,9 @@ vim.keymap.set('n', '<leader>w', ':NvimTreeToggle<CR>', { silent = true, desc = 
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
 vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {})
 
+-- git
+vim.keymap.set('n', '<leader>gs', builtin.git_status, { desc = 'Telescope git status' })
+
 -- lazygit
 vim.keymap.set('n', '<leader>lg', ':LazyGit<CR>', { silent = true, desc = 'Open LazyGit' })
 
