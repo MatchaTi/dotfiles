@@ -55,7 +55,7 @@ set $displayManager wdisplays
 set $discord discord
 
 # Wallpaper
-output * bg ~/dotfiles/wallpapers/purple-wave.png fill
+output * bg ~/dotfiles/wallpapers/palebluenight.jpg fill
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
